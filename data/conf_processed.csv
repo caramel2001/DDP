@@ -1,0 +1,775 @@
+,Title,Acronym,Source,Rank,Note,DBLP,Primary FoR,Comments,Average Rating
+6,3-D Digital Imaging and Modelling,3DIM,CORE2018,C,none,,801.0,0,
+23,National Conference of the American Association for Artificial Intelligence,AAAI,CORE2023,A*,none,aaai,4602.0,1,5.0
+31,Conference on Algorithmic Aspects in Information and Management,AAIM,CORE2023,C,none,aaim,4613.0,0,
+21,"International Joint Conference on Autonomous Agents and Multiagent Systems (previously the International Conference on Multiagent Systems, ICMAS, changed in 2000)",AAMAS,CORE2023,A*,none,atal,4602.0,2,5.0
+49,"International Conference Abstract State Machines, Alloy, B, TLA, VDM, and Z (Previously International Conference of B and Z Users, ZB, changed in 2008)",ABZ,CORE2023,C,none,zum,4612.0,0,
+17,Australian Conference on Artificial Life and Computational Intelligence,ACALCI,CORE2020,Regional,none,acalci,4602.0,0,
+45,Asian Conference on Computer Vision,ACCV,CORE2023,B,none,accv,4603.0,0,
+27,"ACM International Conference on Advances in Computer Entertainment (merged with DIMEA, Digital Interactive Media in Entertainment and Arts, in 2009)",ACE,CORE2023,C,See note,missing-submissions-process.pdf,4607.0,0,
+26,Australasian Computing Education Conference (ACE),ACE,CORE2023,Regional,none,ace,4608.0,1,4.0
+34,International Conference on Affective Computing and Intelligent,ACII,CORE2023,C,none,acii,4608.0,4,5.0
+46,Asian Conference on Intelligent Information and Database Systems,ACIIDS,CORE2023,B,none,aciids,4605.0,133,4.6
+28,Australasian Conference on Information Security and Privacy,ACISP,CORE2023,Regional,none,acisp,4604.0,1,4.0
+46,Advanced Concepts for Intelligent Vision Systems,ACIVS,CORE2023,B,none,acivs,4603.0,1,3.0
+8,Association for Computational Linguistics,ACL,CORE2023,A*,none,acl,4602.0,0,
+1,ACM SIGMIS Computers and People Research,ACM-SIGMIS CPR,CORE2018,B,none,sigcpr,806.0,0,
+47,Asian Conference on Machine Learning,ACML,CORE2023,Unranked,none,acml,4611.0,12,4.7
+45,ACM Multimedia,ACMMM,CORE2023,A*,none,mm,4603.0,2,
+23,ACM Conference on Security and Privacy in Wireless and Mobile Networks,ACM_WiSec,CORE2023,B,none,index.html,4604.0,0,
+46,International Conference on Applied Cryptography and Network Security,ACNS,CORE2023,B,none,acns,4604.0,0,
+25,Annual Computer Security Applications Conference,ACSAC,CORE2023,A,none,acsac,4604.0,4,4.0
+5,"Asilomar Conference on Signals, Systems and Computing",ACSSC,CORE2023,National,none,acssc,4606.0,0,
+35,Australasian Database Conference,ADC,CORE2023,Regional,none,adc,4605.0,0,
+36,Australasian Document Computing Symposium,ADCS,CORE2023,Regional,none,adcs,4605.0,0,
+16,International Conference on AD-HOC Networks and Wireless,ADHOC-NOW,CORE2023,C,none,adhoc-now,4606.0,0,
+20,International Conference on Advanced Data Mining and Applications,ADMA,CORE2023,C,none,adma,4605.0,0,
+23,International Workshop on Agents and Data Mining Interaction,ADMI,CORE2020,B,none,admi,4602.0,0,
+10,Artificial Intelligence Applications and Innovations,AIAI,CORE2023,C,none,ifip12,4601.0,0,
+44,ACS/IEEE International Conference on Computer Systems and Applications,AICCSA,CORE2023,C,none,aiccsa,46.0,0,
+2,International Conference on Artificial Intelligence in Education,AIED,CORE2023,A,none,aied,4601.0,0,
+13,Artificial Intelligence in Medicine in Europe,AIME,CORE2023,B,none,aime,4601.0,0,
+5,"International Conference on Artificial Intelligence: Methodology, Systems, Applications",AIMSA,CORE2023,National,none,aimsa,4602.0,0,
+22,International Conference on Advanced Information Networking and Applications (was ICOIN),AINA,CORE2023,B,none,aina,4606.0,3,4.3
+21,Asia Information Retrieval Symposium,AIRS,CORE2023,C,none,airs,4605.0,0,
+42,"International Conference on Analysis of Images, Social Networks and Texts",AIST,CORE2023,National,none,aist,4602.0,0,
+1,International Conference on Artificial Intelligence and Statistics,AISTATS,CORE2023,A,none,aistats,4611.0,7,5.0
+38,Workshop on Algorithm Engineering and Experiments,ALENEX,CORE2023,A,none,alenex,4613.0,1,
+12,Algorithmic Learning Theory,ALT,CORE2023,B,none,alt,4611.0,0,
+42,Australasian Language Technology Workshop,ALTA,CORE2023,Regional,none,acl-alta,4602.0,0,
+23,Americas Conference on Information Systems,AMCIS,CORE2018,A,none,amcis,806.0,0,
+20,American Medical Informatics Annual Fall Symposium,AMIA,CORE2023,National,none,amia,4601.0,2,5.0
+21,Conference of the Association for Machine Translation in the Americas,AMTA,CORE2023,National,none,amta,4602.0,0,
+44,Workshop on Analytic Algorithmics and Combinatorics,ANALCO,CORE2023,B,none,analco,4613.0,0,
+2,"International Conference on Ambient Systems, Networks and Technologies",ANT,CORE2023,Unranked,none,ant,4606.0,1,4.0
+31,Asia-Pacific Bioinformatics Conference,APBC,CORE2023,B,none,apbc,4601.0,0,
+25,Asia Pacific Conference on Communications,APCC,CORE2023,C,none,apcc,4606.0,0,
+1,ASIAN Symposium on Programming Languages and Systems,APLAS,CORE2023,B,none,aplas,4612.0,0,
+40,Asia-Pacific Network Operations and Management Symposium,APNOMS,CORE2023,C,none,apnoms,4606.0,0,
+27,International Workshop on Approximation Algorithms for Combinatorial Optimization Problems and International Conference on Randomization and Computation,APPROX/RANDOM,CORE2023,A,none,approx,4613.0,0,
+13,"International Conference on Availability, Reliability and Security",ARES,CORE2023,B,none,IEEEares,4604.0,0,
+6,IEEE Symposium on Computer Arithmetic,ARITH,CORE2023,C,none,arith,4613.0,0,
+43,"International Conference on Application-specific Systems, Architectures and Processors",ASAP,CORE2018,A,none,asap,805.0,0,
+1,Automated Software Engineering Conference,ASE,CORE2023,A*,none,kbse,4612.0,2,5.0
+43,International Conference on the Theory and Application of Cryptology and Information Security,ASIACRYPT,CORE2023,A,none,asiacrypt,4604.0,0,
+19,Asia and South Pacific Design Automation Conference,ASPDAC,CORE2023,C,none,aspdac,4606.0,0,
+6,Architectural Support for Programming Languages and Operating Systems,ASPLOS,CORE2023,A*,none,asplos,4612.0,0,
+22,IEEE Automatic Speech Recognition and Understanding Workshop,ASRU,CORE2023,C,none,asru,4602.0,0,
+28,International ACM SIGACCESS Conference on Computers and Accessibility,ASSETS,CORE2023,A,none,assets,4608.0,0,
+3,Automation of Software Test,AST,CORE2023,C,none,ast,4612.0,0,
+38,Australian Software Engineering Conference,ASWEC,CORE2020,Regional,none,aswec,4612.0,0,
+18,International Conference on Advanced and Trusted Computing (was International Conference on Autonomic and Trusted Computing),ATC,CORE2023,C,none,atc,4604.0,0,
+39,"Workshop on Algorithmic Approaches for Transportation Modelling, Optimization, and Systems",ATMOS,CORE2023,C,none,atmos,4613.0,0,
+26,International Conference on Advanced Technologies For Signal & Image Processing,ATSIP,CORE2023,National,none,atsip,4603.0,0,
+23,International Symposium on Automated Technology for Verification and Analysis,ATVA,CORE2023,B,none,atva,4612.0,0,
+49,Advanced Visual Interfaces,AVI,CORE2023,B,none,avi,4608.0,1,5.0
+32,International Conference on Reliable Software Technologies,Ada-Europe,CORE2023,Unranked,none,adaEurope,4612.0,0,
+3,Advances in Modal Logic,AiML,CORE2023,B,none,aiml,4613.0,0,
+15,International Symposium on Algorithms and Experiments for Wireless Networks,Algosensors,CORE2023,C,none,algosensors,4606.0,0,
+16,European Conference on Ambient Intelligence,AmI,CORE2023,C,none,ami,4606.0,1,4.0
+20,"International Conference on Probabilistic, Combinatorial, and Asymptotic Methods in the Analysis of Algorithms (was Conference on Analysis of Algorithms)",AofA,CORE2023,C,none,aofa,4613.0,0,
+15,"ArtsIT, Interactivity & Game Creation (was International Conference on Arts and Technology)",ArtsIT,CORE2023,C,none,artsit,4607.0,0,
+20,"Asia Conference on Information, Computer and Communications Security",AsiaCCS,CORE2023,A,none,asiaccs,4604.0,0,
+32,Australian Joint Conference on Artificial Intelligence,AusAI,CORE2018,Regional,none,ausai,,0,
+46,"IEEE/ACM International Conference on Big Data Computing, Applications and Technologies",BDCAT,CORE2023,C,none,bdc,4611.0,0,
+23,IEEE Bioinformatics and Bioengineering,BIBE,CORE2023,C,none,bibe,4601.0,0,
+7,International Conference in Business Process Management,BPM,CORE2023,A,none,bpm,4612.0,4,4.8
+9,Body Sensor Networks,BSN,CORE2023,C,none,bsn,4601.0,0,
+44,"Datenbanksysteme fÃ¼r Business, Technologie und Web",BTW,CORE2023,National,none,btw,4605.0,0,
+20,IEEE International Conference on Big Data,BigData,CORE2023,B,none,bigdataconf,4605.0,0,
+15,"International Conference on Broadband Communications, Networks and Systems",Broadnets,CORE2023,C,none,broadnets,4606.0,0,
+10,International Conference on Automated Deduction,CADE,CORE2023,A,none,cade,4602.0,0,
+30,Conference on Algebra and Coalgebra in Computer Science,CALCO,CORE2023,B,none,calco,4613.0,0,
+30,International Conference on Cryptology and Network Security,CANS,CORE2023,B,none,cans,4604.0,0,
+4,Computer Algebra in Scientific Computing,CASC,CORE2023,B,none,casc,4613.0,0,
+29,"International Conference on Compilers, Architecture, and Synthesis for Embedded Systems",CASES,CORE2023,B,none,cases,4606.0,0,
+10,International Conference on Computers and their Applications,CATA,CORE2023,National,none,cata,4601.0,0,
+3,Computer Aided Verification,CAV,CORE2023,A*,none,cav,4612.0,0,
+28,International Conference on Compiler Construction,CC,CORE2023,B,none,cc,4606.0,0,
+32,IEEE Conference on Computational Complexity,CCC,CORE2023,A,none,coco,4613.0,0,
+5,"IEEE International Symposium on Cluster, Cloud and Grid Computing",CCGRID,CORE2023,B,none,ccgrid,4606.0,0,
+15,ACM Conference on Computer and Communications Security,CCS,CORE2023,A*,none,ccs,4604.0,0,
+49,International Cross-Domain Conference for Machine Learning and Knowledge Extraction,CD-MAKE,CORE2023,C,none,cdmake,4602.0,0,
+34,IEEE Conference on Decision and Control,CDC,CORE2018,A,none,cdc,1005.0,0,
+29,"Cooperative Design, Visualization, and Engineering",CDVE,CORE2023,C,none,cdve,4608.0,0,
+46,IEEE Congress on Evolutionary Computation,CEC,CORE2023,B,none,cec,4602.0,4,4.5
+28,International Symposium on Code Generation and Optimization,CGO,CORE2023,A,none,cgo,4612.0,0,
+12,Workshop on Cryptographic Hardware and Embedded Systems,CHES,CORE2023,A,none,ches,4604.0,6,5.0
+11,International Conference on Human Factors in Computing Systems,CHI,CORE2023,A*,none,chi,4608.0,0,
+33,CHI PLAY: The Annual Symposium on Computer-Human Interaction in Play,CHI PLAY,CORE2023,Unranked,none,chiplay,4608.0,0,
+9,International Conference on Computer-Human Interaction Research and Applications,CHIRA,CORE2023,C,none,chira,4608.0,0,
+41,International Conference on Algorithms and Complexity (was Italian Conference ),CIAC,CORE2023,C,none,ciac,4613.0,0,
+17,IberoAmerican Congress on Pattern Recognition,CIARP,CORE2023,C,none,ciarp,4603.0,0,
+0,IEEE Symposium on Computational Intelligence in Bioinformatics and Computational Biology,CIBCB,CORE2023,C,none,cibcb,4601.0,0,
+0,Conference on Intelligent Computer Mathematics,CICM,CORE2023,C,none,mkm,4613.0,0,
+48,Conference on Innovative Data Systems Research,CIDR,CORE2023,A,none,cidr,4605.0,0,
+30,ACM International Conference on Information and Knowledge Management,CIKM,CORE2023,A,none,cikm,4605.0,0,
+39,International Conference on Computational Intelligence and Security,CIS,CORE2023,National,none,cis,4604.0,0,
+49,Computational Intelligence in Security for Information Systems,CISIS,CORE2023,National,none,cisis-spain,4604.0,0,
+31,"International Conference on Complex, Intelligent and Software Intensive Systems",CISIS,CORE2023,C,none,cisis,4606.0,1,
+46,Conference on Information Sciences and Systems,CISS,CORE2023,National,none,ciss,4606.0,0,
+30,IEEE International Conference on Computer and Information Technology,CIT,CORE2023,C,none,cit,46.0,1,4.0
+27,Latin American Conference on Informatics,CLEI,CORE2023,C,none,clei,4602.0,0,
+21,International Conference on Cloud Computing and Services Science,CLOSER,CORE2023,C,none,closer,4606.0,0,
+22,IEEE International Conference on Cloud Computing,CLOUD,CORE2023,B,none,IEEEcloud,4606.0,1,5.0
+25,IEEE International Conference on Cluster Computing,CLUSTER,CORE2023,B,none,cluster,4606.0,0,
+2,International Science Conference on Computer Networks,CN,CORE2023,National,none,cn,4606.0,0,
+29,International Conference on Network and Service Management (amalgamation of DSOM and related workshops from 2010),CNSM,CORE2023,B,none,cnsm,4606.0,0,
+14,International Conference on Computing and Combinatorics,COCOON,CORE2023,National,none,cocoon,4613.0,2,4.5
+2,"International Conference on Hardware/Software Codesign and System Synthesis (previously ISSN, changed in 2003)",CODES+ISSS,CORE2023,C,none,codesisss,4606.0,0,
+43,Conference on Games (was Computational Intelligence and Games CIG),COG,CORE2023,C,none,cig,4607.0,0,
+40,"International Workshop on Coordination, Organizations, Institutions, Norms and Ethics for Governance of Multi-Agent Systems (Ethics added 2020)",COINE,CORE2023,C,none,,4602.0,2,4.0
+2,Conference on Learning Theory,COLT,CORE2023,A*,none,colt,4611.0,1,
+49,International Conference on Management of Data,COMAD,CORE2023,National,none,comad,4605.0,0,
+32,"International Conference on Complexity, Future Information Systems and Risk",COMPLEXIS,CORE2023,C,none,complexis,4613.0,0,
+45,International Computer Software and Applications Conference,COMPSAC,CORE2023,B,none,compsac,4601.0,0,
+25,International Conference on COMmunication Systems & NETworkS,COMSNETS,CORE2023,National,none,comsnets,4606.0,0,
+20,International Conference on Concurrency Theory,CONCUR,CORE2023,A,none,concur,4613.0,0,
+29,International and Interdisciplinary Conference on Modelling and Using Context,CONTEXT,CORE2023,C,none,context,4602.0,0,
+15,International Conference on Principles and Practice of Constraint Programming,CP,CORE2023,A,none,cp,4602.0,0,
+7,International Conference on Integration of Artificial Intelligence and Operations Research Techniques in Constraint Programming for Combinatorial Optimization Problems,CPAIOR,CORE2023,B,none,cpaior,4602.0,0,
+43,Combinatorial Pattern Matching,CPM,CORE2023,B,none,cpm,4603.0,1,4.0
+41,International Workshop on Critical Information Infrastructures Security,CRITIS,CORE2023,C,none,critis,4604.0,0,
+0,Advances in Cryptology,CRYPTO,CORE2023,A*,none,crypto,4604.0,0,
+36,International Conference on Risks and Security of Internet and Systems,CRiSIS,CORE2023,C,none,crisis,4604.0,0,
+10,Computer Supported Collaborative Learning,CSCL,CORE2023,B,none,cscl,4608.0,1,5.0
+16,ACM Conference on Computer Supported Cooperative Work,CSCW,CORE2023,A,none,cscw,4608.0,1,5.0
+5,International Conference on Computer Supported Education,CSEDU,CORE2023,B,none,csedu,4608.0,0,
+26,IEEE Computer Security Foundations Symposium (was CSFW),CSF,CORE2023,A,none,csfw,4604.0,0,
+31,Annual Conference on Computer Science Logic,CSL,CORE2023,B,none,csl,4613.0,1,
+44,International Computer Science Symposium in Russia,CSR,CORE2023,National,none,csr,46.0,3,4.0
+33,IEEE Conference on Computer Vision and Pattern Recognition,CVPR,CORE2023,A*,none,cvpr,4603.0,1,5.0
+23,International Conference on Advanced Information Systems Engineering,CaiSE,CORE2023,A,none,caise,4605.0,2,4.5
+48,Computability in Europe: Logic and Theory of Algorithms,CiE,CORE2023,C,none,cie,4613.0,0,
+24,IEEE International Conference on Cloud Computing Technology and Science (International Conference on Cloud Computing pre 2010),CloudCom,CORE2023,C,none,cloudcom,4606.0,2,4.5
+25,"International Conference on Control, Decision and Information Technologies",CoDIT,CORE2023,C,none,codit,4612.0,1,4.0
+29,ACM International Conference on Emerging Networking Experiments and Technologies,CoNEXT,CORE2023,A,none,conext,4606.0,1,5.0
+36,Conference on Computational Natural Language Learning,CoNLL,CORE2023,B,none,conll,4602.0,0,
+31,IEEE Conference on Cognitive and Computational Aspects of Situation Management,CogSIMA,CORE2023,National,none,cogsima,4606.0,0,
+23,"International Conference on Collaborative Computing: Networks, Applications and Worksharing",CollaborateCom,CORE2023,C,none,colcom,4606.0,1,4.0
+28,International Conference on Coordination Models and Languages,Coordination,CORE2023,C,none,coordination,4606.0,0,
+0,Design Automation Conf,DAC,CORE2018,A,none,dac,,2,5.0
+14,IFIP International Conference on Distributed Applications and Interoperable Systems,DAIS,CORE2023,C,none,dais,4606.0,0,
+47,International Workshop on Document Analysis Systems,DAS,CORE2023,B,none,das,4605.0,0,
+42,"International Conference on Dependable, Autonomic and Secure Computing",DASC,CORE2023,C,none,dasc,4604.0,0,
+37,International Conference on Database Systems for Advanced Applications,DASFAA,CORE2023,B,none,dasfaa,4605.0,0,
+35,"International Conference on Data Science, Technology and Applications",DATA,CORE2023,C,none,data,4605.0,0,
+5,"Design, Automation and Test in Europe Conference",DATE,CORE2023,B,none,date,4612.0,3,5.0
+34,International Baltic Conference on Databases and Information Systems,DB&IS,CORE2023,Regional,none,balt,4605.0,0,
+43,Database Programming Languages,DBPL,CORE2021,B,none,dbpl,4605.0,1,
+22,IFIP WG 11.3 Working Conference on Data and Applications Security (also known as DBSEC),DBSEC,CORE2023,B,none,dbsec,4604.0,0,
+1,International Conference on Distributed Computing and Artificial Intelligence,DCAI,CORE2023,National,none,dcai,4602.0,0,
+40,Data Compression Conference,DCC,CORE2023,B,none,dcc,4605.0,0,
+44,International Workshop on Developments in Computational Models,DCM,CORE2020,C,none,dcm,4613.0,0,
+41,IEEE International Conference on Distributed Computing in Sensor Systems,DCOSS,CORE2023,B,none,dcoss,4606.0,0,
+41,International Conference on Dependability of Computer Systems,DEPCoS,CORE2023,National,none,depcos,4606.0,7,4.9
+43,International Conference on Design Science Research in Information Systems and Technology,DESRIST,CORE2018,A,none,desrist,806.0,0,
+49,International Conference on Discrete Geometry for Computer Imagery,DGCI,CORE2023,C,none,dgci,4607.0,1,4.0
+13,Digital Games Research Conference,DIGRA,CORE2023,C,none,digra,4607.0,0,
+17,"GI International Conference on Detection of Intrusions and Malware, and Vulnerability Assessment",DIMVA,CORE2023,C,none,dimva,4604.0,2,4.0
+6,Designing Interactive Systems,DIS,CORE2023,A,none,ACMdis,4608.0,0,
+41,International Symposium on Distributed Computing (was WDAG),DISC,CORE2023,A,none,wdag,4606.0,0,
+29,Dynamic Languages Symposium,DLS,CORE2023,C,none,dls,4612.0,0,
+22,DNA Computing and Molecular Programming,DNA,CORE2023,B,none,dna,4601.0,0,
+46,Deductive and Object-Oriented Databases,DOOD,CORE2018,A,none,dood,806.0,0,
+17,Discovery Science,DS,CORE2023,B,none,dis,4611.0,0,
+42,International Symposium on Distributed Simulation and Real Time Applications,DS-RT,CORE2023,C,none,dsrt,4606.0,0,
+38,IEEE International Conference on Data Science and Advanced Analytics,DSAA,CORE2023,B,none,dsaa,4605.0,0,
+2,IEEE/IFIP International Conference on Dependable Systems and Networks,DSN,CORE2023,A,none,dsn,4606.0,1,5.0
+42,International Workshop on Data Management on New Hardware,DaMoN,CORE2023,C,none,damon,4605.0,0,
+42,Data Warehousing and Knowledge Discovery,DaWaK,CORE2023,B,none,dawak,4605.0,0,
+9,Developments in eSystems Engineering,DeSE,CORE2023,C,none,dese,46.0,0,
+17,ACM Symposium on Document Engineering,DocEng,CORE2023,B,none,doceng,4605.0,0,
+12,European Association for Computational Linguistics,EACL,CORE2023,A,none,eacl,4602.0,1,5.0
+25,Conference of the European Association for Machine Translation,EAMT,CORE2023,C,none,eamt,4602.0,0,
+16,International Conference on Engineering Applications of Neural Networks,EANN,CORE2023,C,none,eann,4611.0,0,
+27,International Conference on Evaluation and Assessment in Software Engineering,EASE,CORE2023,A,none,ease,4612.0,30,5.0
+2,EURO AMERICAN CONFERENCE ON TELEMATICS AND INFORMATION SYSTEMS,EATIS,CORE2023,C,none,eatis,4606.0,0,
+18,ACM Conference on Economics and Computation,EC,CORE2023,A*,none,sigecom,4602.0,2,5.0
+44,European Conference on Technology Enhanced Learning,EC-TEL,CORE2023,B,none,ectel,4601.0,7,4.7
+17,European Conference on Artificial Intelligence,ECAI,CORE2023,A,none,ecai,4602.0,0,
+24,European Conference on Computer Vision,ECCV,CORE2023,A*,none,eccv,4603.0,4,5.0
+29,European Conference on Information Retrieval,ECIR,CORE2023,A,none,ecir,4605.0,1,3.0
+30,European Conference on Information Systems,ECIS,CORE2018,A,none,ecis,806.0,0,
+34,European Conference on Modelling Foundations and Applications,ECMFA,CORE2023,Unranked,none,ecmdafa,4612.0,0,
+33,European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Database (PKDD and ECML combined from 2008),ECML PKDD,CORE2023,A,none,pkdd,4611.0,1,5.0
+37,European Conference on Object-Oriented Programming,ECOOP,CORE2023,A,none,ecoop,4612.0,0,
+41,European Conference on Software Architecture,ECSA,CORE2023,A,none,ecsa,4612.0,0,
+23,European Conference on Computer Supported Cooperative Work,ECSCW,CORE2023,B,none,ecscw,4608.0,0,
+43,European Conference on Symbolic and Quantitative Approaches to Reasoning with Uncertainty,ECSQARU,CORE2023,C,none,ecsqaru,4602.0,0,
+28,Extending Database Technology,EDBT,CORE2023,A,none,edbt,4605.0,0,
+47,European Dependable Computing Conference,EDCC,CORE2023,Unranked,none,edcc,4604.0,0,
+36,Educational Data Mining,EDM,CORE2023,B,none,edm,4601.0,2,4.5
+40,IEEE International Enterprise Distributed Object Computing Conference,EDOC,CORE2023,B,none,edoc,4606.0,0,
+44,Engineering Interactive Computing Systems,EICS,CORE2023,Unranked,none,eics,4608.0,3,5.0
+22,European-Japanese Conference on Information Modelling and Knowledge Bases,EJC,CORE2023,C,none,ejc,4605.0,0,
+31,International Conference on Knowledge Engineering and Knowledge Management,EKAW,CORE2023,B,none,ekaw,4605.0,3,4.3
+37,"EMAS (merger of DALT, AOSE and PROMAS)",EMAS,CORE2023,B,none,emas,4602.0,0,
+39,Empirical Methods in Natural Language Processing,EMNLP,CORE2023,A*,none,emnlp,4602.0,2,5.0
+20,ACM Conference on Embedded Software,EMSOFT,CORE2023,Unranked,none,emsoft,4606.0,0,
+28,International Conference on Evaluation of Novel Approaches to Software Engineering,ENASE,CORE2023,B,none,enase,4612.0,0,
+30,International Conference on Information and Communication Technologies in Tourism,ENTER,CORE2023,C,none,enter,4601.0,0,
+33,Portuguese Conference on Artificial Intelligence,EPIA,CORE2023,National,none,epia,4602.0,0,
+18,International Conference on Conceptual Modelling,ER,CORE2023,A,none,er,4605.0,0,
+10,European Symposium on Algorithms,ESA,CORE2023,A,none,esa,4613.0,1,5.0
+11,European Symposium on Artificial Neural Networks,ESANN,CORE2023,B,none,esann,4611.0,0,
+8,"European Software Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering (duplicate was listed as ESEC, removed from DB)",ESEC/FSE,CORE2023,A*,none,esec,4612.0,6,5.0
+44,International Symposium on Empirical Software Engineering and Measurement,ESEM,CORE2023,A,none,esem,4612.0,1,5.0
+13,European Symposium on Programming,ESOP,CORE2023,A,none,esop,4612.0,1,4.0
+14,European Symposium On Research In Computer Security,ESORICS,CORE2023,A,none,esorics,4604.0,0,
+30,Eye Tracking Research and Applications,ETRA,CORE2023,B,none,etra,4608.0,0,
+3,IEEE/IFIP International Conference on Embedded and Ubiquitous Computing,EUC,CORE2023,C,none,euc,4606.0,0,
+35,European Conference on Multi-Agent Systems,EUMAS,CORE2023,C,none,eumas,4602.0,1,3.0
+27,European Conference on Genetic Programming,EUROGP,CORE2023,B,none,eurogp,4602.0,0,
+26,Conference of the European Society for Fuzzy Logic and Technologies,EUSFLAT,CORE2023,C,none,eusflat,4602.0,0,
+6,European Signal Processing Conference,EUSIPCO,CORE2018,B,none,eusipco,1006.0,0,
+15,International Conference on Emerging Ubiquitous Systems and Pervasive Networks,EUSPN,CORE2023,Unranked,none,euspn,4606.0,0,
+14,International Conference on Embedded Wireless Systems and Networks (wasEuropean Conference on Wireless Sensor Networks),EWSN,CORE2023,B,none,ewsn,4606.0,7,4.7
+3,Euro Virtual Reality,Euro VR,CORE2023,C,none,eurovr,4607.0,0,
+42,International Conference on the Theory and Application of Cryptographic Techniques,EuroCrypt,CORE2023,A*,none,eurocrypt,4604.0,0,
+3,European MPI Users' Group Conference,EuroMPI,CORE2023,C,none,pvm,4606.0,0,
+39,European Conference on Pattern Languages of Programs,EuroPLop,CORE2023,National,none,europlop,4612.0,5,5.0
+3,International European Conference on Parallel and Distributed Computing (was International Conference on Parallel Processing),EuroPar,CORE2023,B,none,europar,4606.0,1,5.0
+2,IEEE European Symposium on Security and Privacy,EuroS&P,CORE2023,Unranked,none,eurosp,4604.0,1,5.0
+9,European SPI,EuroSPI,CORE2023,B,none,eurospi,4612.0,32,5.0
+24,Eurosys Conference,EuroSys,CORE2023,A,none,eurosys,4606.0,1,5.0
+6,Eurographics/IEEE Symposium on Visualization,EuroVis,CORE2023,B,none,vissym,4607.0,1,5.0
+44,International Conference on Applications of Evolutionary Computation,EvoApplications,CORE2023,B,none,evoappl2019.html,4602.0,0,
+26,European Conference on Evolutionary Computation in Combinatorial Optimisation,EvoCOP,CORE2023,B,none,evocop2019.html,4602.0,0,
+6,Fundamental Approaches to Software Engineering,FASE,CORE2023,B,none,fase,4612.0,0,
+41,Conference on File and Storage Technologies,FAST,CORE2023,A,none,fast,4605.0,0,
+10,International Frontiers of Algorithmics Workshop,FAW,CORE2023,National,none,faw,4613.0,0,
+33,Financial Cryptography and Data Security Conference,FC,CORE2023,A,none,fc,4604.0,1,5.0
+8,IEEE Symposium on Field Programmable Custom Computing Machines,FCCM,CORE2023,B,none,fccm,4606.0,0,
+2,International Symposium on Fundamentals of Computation Theory,FCT,CORE2023,B,none,fct,4613.0,1,4.0
+37,International Conference on the Foundations of Digital Games,FDG,CORE2023,C,none,fdg,4607.0,0,
+45,Forum on Specification and Design Languages,FDL,CORE2023,C,none,fdl,4612.0,0,
+23,Workshop on Fault Diagnosis and Tolerance in Cryptography,FDTC,CORE2023,C,none,fdtc,4604.0,0,
+18,IEEE International Conference on Automatic Face and Gesture Recognition,FG,CORE2023,B,none,fgr,4603.0,0,
+4,Frontiers in Education,FIE,CORE2023,C,none,fie,4608.0,1,
+41,International Conference on Frontiers of Information Technology,FIT,CORE2023,National,none,fit,46.0,0,
+1,International Symposium on Functional and Logic Programming,FLOPS,CORE2023,National,none,flops,4613.0,0,
+48,International Symposium on Formal Methods (was Formal Methods Europe FME),FM,CORE2023,A,none,fm,4612.0,1,4.0
+40,Formal Methods in Computer-Aided Design,FMCAD,CORE2023,B,none,fmcad,4612.0,2,4.5
+8,Int. Workshop on Formal Methods for Industrial Critical Systems,FMICS,CORE2023,C,none,fmics,4612.0,0,
+20,The International Conference on Future Networks and Communications,FNC,CORE2023,Unranked,none,fnc,4606.0,0,
+9,IEEE Symposium on Foundations of Computer Science,FOCS,CORE2023,A*,none,focs,4613.0,0,
+47,Foundations of Genetic Algorithms,FOGA,CORE2023,A,none,foga,4602.0,1,5.0
+37,International Conference on Formal Ontology in Information Systems,FOIS,CORE2023,B,none,fois,4602.0,0,
+48,Foundations of Software Science and Computational Structures,FOSSACS,CORE2023,A,none,fossacs,4613.0,0,
+37,Flexible Query-Answering Systems,FQAS,CORE2023,C,none,fqas,4605.0,0,
+29,IEEE Conference of the Open Innovations Association FRUCT,FRUCT,CORE2023,Regional,none,fruct,4606.0,0,
+38,International Conference on Formal Structures for Computation and Deduction,FSCD,CORE2023,B,none,fscd,4613.0,0,
+31,International Conference on Field and Service Robotics,FSR,CORE2018,A,none,fsr,801.0,0,
+49,Foundations of Software Technology and Theoretical Computer Science,FST&TCS,CORE2023,National,none,fsttcs,4613.0,1,5.0
+42,Conference on Fun with Algorithms,FUN,CORE2023,National,none,fun,4613.0,0,
+35,International Conference on Information Fusion,FUSION,CORE2023,C,none,fusion,4605.0,0,
+49,IEEE International Conference on Fuzzy Systems,FUZZ-IEEE,CORE2023,B,none,fuzzIEEE,4602.0,1,5.0
+37,CONFERENCE ON COMPUTER SCIENCE AND INTELLIGENCE SYSTEMS,FedCSIS,CORE2023,Unranked,none,fedcsis,4602.0,0,
+24,Graph Drawing,GD,CORE2023,A,none,gd,4613.0,0,
+8,Genetic and Evolutionary Computations,GECCO,CORE2023,A,none,gecco,4602.0,3,5.0
+25,Graphics Interface,GI,CORE2023,B,none,graphicsinterface,4607.0,0,
+5,IEEE Global Telecommunications Conference,GLOBECOM,CORE2023,B,none,globecom,4606.0,2,5.0
+48,"International Conference on Green, Pervasive and Cloud Computing (was Grid and Pervasive Computing)",GPC,CORE2023,C,none,gpc,4606.0,0,
+44,International Conference on Generative Programming and Component Engineering,GPCE,CORE2023,B,none,gpce,4612.0,0,
+16,International Wordnet Conference (Global Wordnet Conference),GWC,CORE2023,C,none,wordnet,4605.0,0,
+39,Human-Agent Interaction,HAI,CORE2023,B,none,hai,4608.0,0,
+13,International Conference on Hybrid Artificial Intelligence Systems,HAIS,CORE2023,National,none,hais,4602.0,0,
+26,Haskell Workshop,HASKELL,CORE2023,C,none,haskell,4612.0,0,
+8,AAAI Conference on Human Computation and Crowdsourcing,HCOMP,CORE2023,B,none,hcomp,4608.0,0,
+27,Hawaii International Conference on System Sciences,HICSS,CORE2018,A,none,hicss,806.0,3,3.3
+14,International Conference on Hybrid Intelligent Systems,HIS,CORE2023,C,none,his,4602.0,0,
+43,Symposium on High Performance Chips,HOTCHIPS (HCS),CORE2023,C,none,hotchips,4606.0,0,
+10,IEEE Symposium on High-Performance Interconnects,HOTI,CORE2023,National,none,hoti,4606.0,0,
+31,Workshop on Mobile Computing Systems and Applications,HOTMOBILE,CORE2023,National,none,wmcsa,4606.0,0,
+27,ACM Workshop on Hot Topics in Networks,HOTNETS,CORE2023,National,none,hotnets,4606.0,0,
+0,International Conference and Exhibition on High Performance Computing in the Asia-Pacific Region,HPC Asia,CORE2023,C,none,hpcasia,4606.0,0,
+5,International Symposium on High Performance Computer Architecture,HPCA,CORE2023,A*,none,hpca,4606.0,0,
+41,ACM International Symposium on High Performance Distributed Computing,HPDC,CORE2023,A,none,hpdc,4606.0,0,
+33,IEEE Workshop on High Performance Switching and Routing,HPSR,CORE2023,C,none,hpsr,4606.0,0,
+38,Human System Interaction,HSI,CORE2023,C,none,hsi,4608.0,0,
+45,IEEE international conference on ehealth networking applications and services (was International Workshop on Enterprise Networking and Computing in Health Care Industry; changed 2006),HealthCom,CORE2023,C,none,healthcom,4601.0,1,
+5,International Conference on High Performance Computing,HiPC,CORE2023,National,none,hipc,4606.0,2,5.0
+13,USENIX Workshop on Hot Topics in Operating Systems,HotOS,CORE2023,A,none,hotos,4606.0,1,
+21,ACM Conference on Hypertext and Social Media,Hypertext,CORE2018,A,none,ht,805.0,0,
+28,"International Symposium on Parallel Architectures, Algorithms and Networks",I-SPAN,CORE2020,B,none,ispan,4606.0,0,
+35,ACM-SIGRAPH Interactive 3D Graphics and Games,I3DG,CORE2023,B,none,si3d,4607.0,0,
+6,International Conference on Innovations for Community Services (was Innovative Internet Computer Systems IICS until 2014),I4CS,CORE2023,C,none,iics,4601.0,0,
+7,IEEE Industry Applications Society Annual Conference,IAS,CORE2023,National,none,iasam,4601.0,0,
+26,"International Joint Conference on Knowledge Discovery, Knowledge Engineering and Knowledge Management",IC3K,CORE2023,C,none,ic3k,4605.0,0,
+40,International Conference on Algorithms and Architectures for Parallel Processing,ICA3PP,CORE2023,C,none,ica3pp,4606.0,0,
+35,International Conference on Agents and Artificial Intelligence,ICAART,CORE2023,B,none,icaart,4602.0,0,
+19,IEEE International Conference on Autonomic Computing,ICAC,CORE2023,B,none,icac,4606.0,0,
+48,International Conference on Artificial Intelligence and Law,ICAIL,CORE2023,C,none,icail,4602.0,0,
+0,International Conference on Artificial Intelligence and Soft Computing,ICAISC,CORE2023,National,none,icaisc,4602.0,34,4.9
+37,International Colloquium on Automata Languages and Programming,ICALP,CORE2023,A,none,icalp,4613.0,2,5.0
+16,IEEE International Conference on Advanced Learning Technologies,ICALT,CORE2023,B,none,icalt,4601.0,0,
+6,International Conference on Artificial Neural Networks,ICANN,CORE2023,C,none,icann,4611.0,0,
+11,International Conference on Automated Planning and Scheduling,ICAPS,CORE2023,A*,none,icaps,4602.0,0,
+24,"International Conference on Control, Automation, Robotics and Vision",ICARCV,CORE2023,C,none,icarcv,4602.0,0,
+14,"IEEE International Conference on Acoustics, Speech and Signal Processing",ICASSP,CORE2018,B,none,icassp,,2,4.0
+9,International Conference on Artificial Reality and Telexistence,ICAT,CORE2017,B,none,icat,801.0,0,
+27,IEEE International Conference on Communications,ICC,CORE2018,B,none,icc,1006.0,2,3.0
+47,IEEE/ACM International Conference on Computer-Aided Design,ICCAD,CORE2023,A,none,iccad,4606.0,1,5.0
+36,International Conference on Computational Creativity,ICCC,CORE2023,C,none,icccrea,46.0,0,
+35,International Conference on Computational Collective Intelligence,ICCCI,CORE2023,B,none,iccci,4602.0,73,4.7
+0,International Conference on Computer Communication and Networks,ICCCN,CORE2023,B,none,icccn,4606.0,1,
+11,International Conference on Computers Helping People with Special Needs,ICCHP,CORE2023,C,none,icchp,4601.0,0,
+26,IEEE International Conference on Cognitive Informatics,ICCI,CORE2023,C,none,IEEEicci,4602.0,0,
+32,IEEE International Conference on Computer Languages,ICCL,CORE2018,A,none,iccl,803.0,0,
+10,IEEE International Conference on Intelligent Computer Communication and Processing,ICCP,CORE2023,National,none,iccp2,4602.0,0,
+46,International Conference on Computational Science,ICCS,CORE2023,Unranked,none,iccS,4601.0,3,5.0
+19,International Conference on Conceptual Structures,ICCS,CORE2021,B,none,iccs,4613.0,0,
+47,International Conference on Computational Science and its Applications,ICCSA,CORE2023,C,none,iccsa,46.0,0,
+33,IEEE International Conference on Computer Vision,ICCV,CORE2023,A*,none,iccv,4603.0,3,5.0
+7,International Conference on Computer Vision and Graphics,ICCVG,CORE2023,National,none,iccvg,4603.0,0,
+42,IEEE International Conference on Document Analysis and Recognition,ICDAR,CORE2023,A,none,icdar,4605.0,2,5.0
+2,International Conference on Distributed Computing and Internet Technologies,ICDCIT,CORE2023,National,none,icdcit,4606.0,0,
+3,International Conference on Distributed Computing and Networking,ICDCN,CORE2023,National,none,icdcn,4606.0,7,4.7
+4,International Conference on Distributed Computing Systems,ICDCS,CORE2023,A,none,icdcs,4606.0,4,5.0
+34,International Conference on Data Engineering,ICDE,CORE2023,A*,none,icde,4605.0,0,
+46,International Conference on Digital Economy,ICDEc,CORE2018,Unranked,none,icdec,806.0,0,
+37,IEEE International Conference on Data Mining,ICDM,CORE2023,A*,none,icdm,4605.0,1,5.0
+36,ACM/IEEE International Conference on Distributed Smart Cameras,ICDSC,CORE2023,B,none,icdsc,4606.0,0,
+38,International Conference on Database Theory,ICDT,CORE2023,A,none,icdt,4605.0,0,
+24,International Conference on Entertainment Computing,ICEC,CORE2023,C,none,iwec,4607.0,0,
+46,IEEE International Conference on Engineering of Complex Computer Systems,ICECCS,CORE2023,B,none,iceccs,4612.0,0,
+48,International Computing Education Research Workshop,ICER,CORE2023,A,none,icer,4608.0,0,
+5,International Conference Formal Concept Analysis Conference,ICFCA,CORE2023,C,none,icfca,4613.0,1,4.0
+48,IEEE International Conference on Fog and Edge Computing,ICFEC,CORE2023,C,none,icfec,4606.0,0,
+40,International Conference on Frontiers of Handwriting Recognition,ICFHR,CORE2023,B,none,icfhr,4603.0,0,
+42,International Conference on Functional Programming,ICFP,CORE2023,A,none,icfp,4612.0,0,
+0,IEEE International Conference on Global Software Engineering,ICGSE,CORE2023,C,none,icgse,4612.0,0,
+47,International Conference on Graph Transformations,ICGT,CORE2023,B,none,gg,4613.0,0,
+16,International Conference on Image Analysis and Processing,ICIAP,CORE2023,National,none,iciap,4603.0,1,3.0
+17,International Conference on Image Analysis and Recognition,ICIAR,CORE2023,C,none,iciar,4603.0,0,
+21,International Conference on Interactive Digital Storytelling (2008 merger of 'ICVS International Conference on Virtual Storytelling' and 'TIDSE Technology for Interactive Digital Storytelling'),ICIDS,CORE2023,C,none,icids,4607.0,3,4.7
+18,International Conference on Image and Graphics,ICIG,CORE2023,National,none,icig,4607.0,0,
+47,"Conference on Innovation in Clouds, Internet and Networks",ICIN,CORE2023,National,none,icin,4606.0,0,
+27,"International Conference on Informatics in Control, Automation and Robotics",ICINCO,CORE2023,C,none,icinco,4602.0,0,
+4,IEEE International Conference on Image Processing,ICIP,CORE2023,B,none,icip,4603.0,2,1.0
+44,IEEE/ACIS International Conference on Computer and Information Science,ICIS,CORE2023,C,none,ACISicis,46.0,1,4.0
+42,International Conference on Information Systems,ICIS,CORE2018,A*,none,icis,806.0,0,
+41,International Conference on Information Security and Cryptology,ICISC,CORE2023,National,none,icisc,4604.0,0,
+19,International Conference on Image and Signal Processing,ICISP,CORE2023,C,none,icisp,4603.0,0,
+45,International Conference on Information Systems Security,ICISS,CORE2023,National,none,iciss,4604.0,0,
+46,International Conference on Information Systems Security and Privacy,ICISSP,CORE2023,C,none,icissp,4604.0,0,
+42,International Conference on Logic Programming,ICLP,CORE2023,A,none,iclp,4613.0,0,
+39,International Conference on Learning Representations,ICLR,CORE2023,A*,none,iclr,4611.0,0,
+15,IEEE International Conference on Multimedia and Expo,ICME,CORE2023,A,none,icmcs,4603.0,0,
+27,International Conference on Multimodal Interaction (was International Conference on Multimodal Interfaces),ICMI,CORE2023,B,none,icmi,4608.0,1,4.0
+44,International Conference on Machine Learning,ICML,CORE2023,A*,none,icml,4611.0,0,
+45,International Conference on Machine Learning and Applications,ICMLA,CORE2023,C,none,icmla,4611.0,4,2.0
+46,International Conference on Machine Learning and Cybernetics,ICMLC,CORE2023,National,none,icmlc,4611.0,0,
+26,International Conference on Multimedia Retrieval (previously MIR),ICMR,CORE2023,B,none,mir,4603.0,0,
+16,International Conference on Model Transformation,ICMT,CORE2023,B,none,icmt,4612.0,0,
+47,International Conference on Machine Vision,ICMV,CORE2023,C,none,icmv,4603.0,0,
+28,International Conference on Natural Computation,ICNC,CORE2023,National,none,icnc,4602.0,0,
+37,International Conference on Neural Information Processing,ICONIP,CORE2023,B,none,iconip,4611.0,0,
+47,International Conference on Operations Research and Enterprise Systems,ICORES,CORE2023,C,none,icores,4602.0,0,
+0,International Conference on Smart homes and health Telematics,ICOST,CORE2023,C,none,icost,4601.0,0,
+2,International Conference on Parallel and Distributed Systems,ICPADS,CORE2023,B,none,icpads,4606.0,0,
+23,"IEEE International Conference on Program Comprehension (previously IWPC, changed in 2006)",ICPC,CORE2023,A,none,iwpc,4612.0,1,5.0
+42,ACM/SPEC International Conference on Performance Engineering,ICPE,CORE2023,B,none,wosp,4612.0,0,
+6,International Conference on Pattern Recognition,ICPR,CORE2023,B,none,icpr,4603.0,0,
+7,International Conference on Pattern Recognition Applications and Methods,ICPRAM,CORE2023,C,none,icpram,4603.0,0,
+25,IEEE International Conference on Robotics and Automation,ICRA,CORE2023,A*,none,icra,4602.0,6,4.5
+36,ACM International Conference on Supercomputing,ICS,CORE2023,A,none,ics,4606.0,0,
+3,International Conference on Software Architecture (was previously WICSA),ICSA,CORE2023,A,none,icsa,4612.0,11,4.9
+6,International Conference on Software Engineering,ICSE,CORE2023,A*,none,icse,4612.0,3,4.5
+25,International Conference on Systems Engineering,ICSEng,CORE2023,C,none,icseng,46.0,0,
+32,"IEEE International Conference on Software Maintenance and Evolution (prior to 2014 was ICSM, IEEE International Conference on Software Maintenance)",ICSME,CORE2023,A,none,icsm,4612.0,1,5.0
+46,International Conference on Service Oriented Computing,ICSOC,CORE2023,A,none,icsoc,4606.0,1,4.0
+15,International Conference on Software Reuse,ICSR,CORE2023,B,none,icsr,4612.0,0,
+2,International Conference on Software and System Processes (was ICSP prior to 2011),ICSSP,CORE2023,B,none,ispw,4612.0,1,5.0
+16,"International Conference on Software Testing, Verification and Validation",ICST,CORE2023,A,none,icst,4612.0,4,4.8
+1,International Conference on Software and Data Technologies,ICSoft,CORE2023,C,none,icsoft,4612.0,0,
+40,International Colloquium on Theoretical Aspects of Computing,ICTAC,CORE2023,C,none,ictac,4613.0,0,
+1,International Conference on Tools with Artificial Intelligence,ICTAI,CORE2023,B,none,ictai,4602.0,1,5.0
+28,International Conference on Information and Communication Technologies and Development,ICTD,CORE2023,C,none,ictd,4601.0,0,
+19,"ICT in Education, Research, and Industrial Applications",ICTERI,CORE2023,National,none,icteri,4601.0,0,
+44,International Conference on the Theory of Information Retrieval,ICTIR,CORE2023,Unranked,none,ictir,4605.0,0,
+34,International Conference on Testing Software and Systems,ICTSS,CORE2023,C,none,pts,4612.0,0,
+8,International Conference on Computer Vision Systems,ICVS,CORE2023,C,none,icvs,4603.0,0,
+21,International Conference on Web Engineering,ICWE,CORE2023,B,none,icwe,4605.0,3,4.7
+36,IEEE International Conference on Web Services,ICWS,CORE2023,A,none,icws,4606.0,0,
+20,International Conference on Web and Social Media,ICWSM,CORE2023,A,none,icwsm,4601.0,2,3.0
+14,Intelligent Data Analysis,IDA,CORE2023,B,none,ida,4605.0,0,
+15,Intelligent Distributed Computing,IDC,CORE2023,Unranked,none,idc,4606.0,0,
+25,International Conference on Informatics & Data-Driven Medicine,IDDM,CORE2023,C,none,iddm,4611.0,0,
+10,International Conference on Intelligent Data Engineering and Automated Learning,IDEAL,CORE2023,C,none,ideal,46.0,0,
+21,The International Conference on Intelligent Environments,IE,CORE2023,B,none,intenv,4602.0,0,
+24,International Conference on Industrial and Engineering Applications of Artificial Intelligence and Expert Systems,IEA/AIE,CORE2023,C,none,ieaaie,4602.0,0,
+48,IEEE Consumer Communications and Networking Conference,IEEE CCNC,CORE2023,B,none,ccnc,4606.0,0,
+46,IEEE Symposium on Computational Intelligence for Financial Engineering,IEEE CIFEr,CORE2023,C,none,cifer,4601.0,0,
+6,IEEE International Conference on Information and Automation,IEEE ICIA,CORE2023,National,none,icinfa,4602.0,0,
+12,IEEE International Conference on Intelligent Systems,IEEE IS,CORE2023,C,none,is,4602.0,0,
+9,IEEE Information Visualization Conference,IEEE InfoVis,CORE2020,A*,none,infovis,4608.0,0,
+33,IEEE International Conference on Software Services Engineering (previously IEEE International Conference on Services Computing SCC),IEEE SSE,CORE2023,B,none,IEEEscc,4606.0,0,
+14,IEEE Symposium on Visual Analytics Science and Technology,IEEE VAST,CORE2020,C,none,ieeevast,4608.0,4,5.0
+21,IEEE Visualization,IEEE VIS,CORE2023,A,none,visualization,4608.0,0,
+18,Intelligent Vehicles Conference,IEEE-IV,CORE2023,B,none,ivs,4602.0,0,
+12,IFIP Information Security & Privacy Conference,IFIP SEC,CORE2023,B,none,sec,4604.0,0,
+11,Integrated Formal Methods,IFM,CORE2023,B,none,ifm,4612.0,0,
+29,IFSA World Congress,IFSA,CORE2023,C,none,ifsa,4602.0,0,
+41,IEEE International Geoscience and Remote Sensing Symposium,IGARSS,CORE2023,C,none,igarss,4601.0,0,
+39,Information Hiding and Multimedia Security Workshop,IH&MMSec,CORE2023,C,none,ih,4604.0,0,
+40,Information Integration and Web-based Applications and Services,IIWAS,CORE2023,C,none,iiwas,46.0,1,4.0
+19,International Joint Conference on Artificial Intelligence,IJCAI,CORE2023,A*,none,ijcai,4602.0,1,5.0
+20,International Joint Conference on Automated Reasoning,IJCAR,CORE2023,A,none,ijcar,4602.0,0,
+23,International Joint Conference on Computational Intelligence,IJCCI,CORE2023,C,none,ijcci,4602.0,0,
+27,International Joint Conference on Natural Language Processing,IJCNLP,CORE2023,B,none,ijcnlp,4602.0,0,
+43,IEEE International Joint Conference on Neural Networks,IJCNN,CORE2023,B,none,ijcnn,4611.0,7,4.2
+29,International Joint Conference on Rough Sets (2014 International Conference on Rough Sets and Current Trends in Computing joined with 3 others),IJCRS (was RSCTC),CORE2023,C,none,rskt,4602.0,0,
+35,Inductive Logic Programming,ILP,CORE2023,B,none,ilp,4613.0,0,
+28,IFIP/IEEE International Symposium on Integrated Management (even years sharing with NOMS),IM,CORE2023,B,none,im,4606.0,0,
+27,Internet Measurement Conference,IMC,CORE2023,A,none,imc,4606.0,0,
+31,International Conference on Cryptology in India,INDOCRYPT,CORE2023,National,none,indocrypt,4604.0,0,
+31,IEEE International Conference on Computer Communications,INFOCOM,CORE2023,A*,none,infocom,4606.0,8,4.9
+10,International Symposium on Innovations in Intelligent Systems and Applications,INISTA,CORE2023,C,none,inista,4602.0,0,
+40,International Natural Language Generation Conference,INLG,CORE2023,B,none,inlg,4602.0,0,
+42,International Network Optimization Conference,INOC,CORE2023,C,none,inoc,4606.0,0,
+45,IEEE International On-Line Testing Symposium,IOLTS,CORE2023,C,none,iolts,4612.0,0,
+49,Conference on Integer Programming and Combinatorial Optimization,IPCO,CORE2023,A,none,ipco,4613.0,0,
+46,IEEE International Parallel and Distributed Processing Symposium (was IPPS and SPDP),IPDPS,CORE2023,A,none,ipps,4606.0,1,4.0
+29,International Symposium on Parameterized and Exact Computation (was IWPEC pre 2004),IPEC,CORE2023,B,none,iwpec,4613.0,0,
+23,International Conference on Indoor Positioning and Indoor Navigation,IPIN,CORE2023,C,none,ipin,4606.0,0,
+36,International Conference on Information Processing and Management of Uncertainty,IPMU,CORE2023,C,none,ipmu,4605.0,0,
+41,Information Processing in Sensor Networks,IPSN,CORE2023,A*,none,ipsn,4606.0,0,
+7,IEEE International Conference on Information Reuse and Integration,IRI,CORE2023,National,none,iri,4605.0,0,
+5,IEEE/RSJ International Conference on Intelligent Robots and Systems,IROS,CORE2023,A,none,iros,4602.0,0,
+14,International Symposium on Algorithms and Computation,ISAAC,CORE2023,A,none,isaac,4613.0,1,5.0
+25,International Symposium on Autonomous Decentralized Systems,ISADS,CORE2023,C,none,isads,4606.0,0,
+18,Conference for the International Simulation and Gaming Association,ISAGA,CORE2023,C,none,isaga,4607.0,0,
+20,International Symposium on Artificial Intelligence and Mathematics,ISAIM,CORE2023,National,none,isaim,4602.0,0,
+9,International Conference Information Systems Architecture and Technology,ISAT,CORE2023,National,none,isat,4606.0,0,
+33,ISC High Performance (was International Supercomputing Conference),ISC,CORE2023,C,none,supercomputer,4606.0,0,
+40,ACM International Symposium on Computer Architecture,ISCA,CORE2023,A*,none,isca,4612.0,0,
+36,International Symposium on Computer and Information Sciences,ISCIS,CORE2020,C,none,iscis,46.0,0,
+30,International Symposium on Combinatorial Optimisation,ISCO,CORE2023,C,none,iscopt,4613.0,1,5.0
+16,International Conference on Intelligent Systems Designs and Applications,ISDA,CORE2023,C,none,isda,4602.0,0,
+8,IEEE International Conference on Intelligence and Security Informatics,ISI,CORE2023,C,none,isi,4604.0,0,
+6,International Symposium on Information and Communication Technologies,ISICT,CORE2020,C,none,isict,46.0,0,
+8,IEEE International Symposium on Information Theory,ISIT,CORE2023,B,none,isit,4613.0,2,5.0
+15,International Conference on Intelligent Systems and Knowledge Engineering,ISKE,CORE2023,National,none,iske,4602.0,0,
+11,IEEE International Symposium on Multimedia,ISM,CORE2023,C,none,ism,4603.0,0,
+49,IEEE/ACM International Symposium on Mixed and Augmented Reality,ISMAR,CORE2023,A*,none,ismar,4607.0,0,
+17,Intelligent Systems in Molecular Biology,ISMB,CORE2023,Unranked,none,ismb,4601.0,1,
+49,International Symposium on Foundations of Intelligent Systems,ISMIS,CORE2023,C,none,ismis,4602.0,0,
+19,International Symposium on Memory Management,ISMM,CORE2023,C,none,iwmm,4606.0,0,
+22,"International Symposium on Networks, Computers and Communications",ISNCC,CORE2023,C,none,isncc,4606.0,2,5.0
+23,International Symposium on Neural Networks,ISNN,CORE2023,C,none,isnn,4611.0,1,4.0
+17,IEEE International Symposium on Real-Time Distributed Computing,ISORC,CORE2023,C,none,isorc,4606.0,0,
+13,IEEE International Symposium on Parallel and Distributed Processing with Applications,ISPA,CORE2023,C,none,ispa,4606.0,0,
+14,IEEE International Symposium on Performance Analysis of Systems and Software,ISPASS,CORE2023,B,none,ispass,4612.0,0,
+27,International Symposium on Parallel and Distributed Computing,ISPDC,CORE2023,C,none,ispdc,4606.0,0,
+33,International Symposium on Robotics,ISR,CORE2018,A,none,isr,801.0,0,
+31,ACM International Conference on Interactive Surfaces and Spaces (was International Workshop on Horizontal Interactive Human-Computer Systems: Tabletop),ISS,CORE2023,Unranked,none,tabletop,4608.0,1,4.0
+46,International Symposium on Symbolic and Algebraic Computation,ISSAC,CORE2023,A,none,issac,4613.0,0,
+38,International Symposium on Software Reliability Engineering,ISSRE,CORE2023,A,none,issre,4612.0,1,5.0
+39,International Symposium on Software Testing and Analysis,ISSTA,CORE2023,A,none,issta,4612.0,0,
+5,International Symposium on Visual Computing,ISVC,CORE2023,National,none,isvc,4607.0,0,
+3,International Semantic Web Conference,ISWC,CORE2023,A,none,semweb,4605.0,5,4.6
+15,"International Symposium on Leveraging Applications of Formal Methods, Verification and Validation",ISoLA,CORE2023,C,none,isola,4612.0,0,
+28,International Conference on Internet Technologies and Applications,ITA,CORE2023,National,none,ita,46.0,0,
+9,International Teletraffic Congress,ITC,CORE2023,Unranked,none,teletraffic,4606.0,0,
+1,International Conference on Information Technology: Coding and Computing,ITCC,CORE2020,C,none,itcc,46.0,0,
+5,Innovations in Theoretical Computer Science,ITCS,CORE2023,A,none,innovations,4613.0,0,
+8,International Telecommunication Networks and Applications Conference (was Australian Telecommunication Networks and Applications Conference),ITNAC,CORE2023,Regional,none,itnac,4606.0,6,4.8
+1,"Conference on Interactive Theorem Proving (previously TPHOLs, changed in 2009)",ITP,CORE2023,A,none,itp,4613.0,0,
+18,International Conference on Intelligent Tutoring Systems,ITS,CORE2023,B,none,its,4601.0,0,
+49,Information Theory Workshop,ITW,CORE2023,B,none,itw,4613.0,1,4.0
+33,Annual Conference on Innovation and Technology in Computer Science Education,ITiCSE,CORE2023,B,none,iticse,4608.0,0,
+19,International Conference on Intelligent User Interfaces,IUI,CORE2023,A,none,iui,4608.0,0,
+20,Intelligent Virtual Agents,IVA,CORE2023,B,none,iva,4602.0,1,4.0
+17,International Work-Conference on Artificial and Natural Neural Networks,IWANN,CORE2023,National,none,iwann,4611.0,0,
+37,International Workshop on Combinatorial Image Analysis: Theory and Applications,IWCIA,CORE2023,C,none,iwcia,4603.0,0,
+42,ACM International Wireless Communications and Mobile Computing Conference,IWCMC,CORE2023,B,none,iwcmc,4606.0,1,
+45,International Workshop on Digital Watermarking,IWDW,CORE2023,C,none,iwdw,4604.0,0,
+18,International Work-conference on the Interplay between Natural and Artificial Computation,IWINAC,CORE2023,National,none,iwinac,4602.0,0,
+32,IEEE International Workshop on Quality of Service,IWQoS,CORE2023,B,none,iwqos,4606.0,0,
+2,International Workshop on Security,IWSEC,CORE2023,National,none,iwsec,4604.0,0,
+48,Joint Conference of the International Workshop on Software Measurement and the International Conference on Software Process and Product Measurement (IWSM and Mensura combined from 2007),IWSM Mensura,CORE2023,C,none,iwsm,4612.0,0,
+42,SKLOIS Conference on Information Security and Cryptology,Inscrypt,CORE2023,National,none,cisc,4604.0,0,
+21,IFIP TC13 Conference on Human-Computer Interaction,Interact,CORE2023,B,none,interact,4608.0,1,5.0
+31,Interspeech (combined EuroSpeech and ICSLP in 2000),Interspeech,CORE2023,A,none,interspeech,4602.0,0,
+27,"International Conference on Internet of Things, Big Data and Security",IoTBDS,CORE2023,C,none,iotbd,4604.0,0,
+17,ACM Conference on Digital Libraries,JCDL,CORE2018,A*,none,jcdl,806.0,2,4.5
+36,"Logics in Artificial Intelligence, European Conference",JELIA,CORE2023,A,none,jelia,4613.0,0,
+40,International Conference on Legal Knowledge and Information Systems,JURIX,CORE2023,C,none,jurix,4601.0,0,
+18,Knowledge capture,K-CAP,CORE2023,B,none,kcap,4605.0,3,4.7
+32,ACM International Conference on Knowledge Discovery and Data Mining,KDD,CORE2023,A*,none,kdd,4605.0,1,
+34,International Conference on Knowledge-Based and Intelligent Information and Engineering Systems,KES,CORE2023,B,none,kes,4602.0,63,4.7
+11,International Symposium on Intelligent and Interactive Multimedia: Systems and Services,KES IIMSS,CORE2020,C,none,iimss,4603.0,0,
+38,International Conference on the Principles of Knowledge Representation and Reasoning,KR,CORE2023,A*,none,kr,4602.0,0,
+33,"International Conference on Knowledge Science, Engineering and Management",KSEM,CORE2023,C,none,ksem,4602.0,0,
+30,"Latin-American Algorithms, Graphs and Optimization Symposium",LAGOS,CORE2023,C,none,lagos,4613.0,0,
+38,International Conference on Learning Analytics and Knowledge,LAK,CORE2023,A,none,lak,4608.0,1,5.0
+34,IEEE LAN/MAN Workshop,LANMAN,CORE2023,C,none,lanman,4606.0,0,
+36,International Conference on Language and Automata Theory and Applications,LATA,CORE2023,C,none,lata,4613.0,0,
+14,International Symposium on Latin American Theoretical Informatics,LATIN,CORE2023,B,none,latin,4613.0,2,4.0
+38,IEEE Conference on Local Computer Networks,LCN,CORE2023,B,none,lcn,4606.0,1,4.0
+6,"ACM SIGPLAN Conference on Languages, Tools, and Compilers for Embedded Systems",LCTES,CORE2023,B,none,lctrts,4606.0,0,
+26,"Language, Data and Knowledge",LDK,CORE2023,Unranked,none,ldk,4602.0,0,
+35,Logical Foundations of Computer Science,LFCS,CORE2023,National,none,lfcs,4613.0,0,
+12,IEEE Symposium on Logic in Computer Science,LICS,CORE2023,A*,none,lics,4613.0,0,
+16,International Symposium on Logic-based Program Synthesis and Transformation,LOPSTR,CORE2023,C,none,lopstr,4613.0,0,
+43,International Conference on Logic Programming and Non-monotonic Reasoning,LPNMR,CORE2023,B,none,lpnmr,4602.0,0,
+25,Language Resources and Evaluation Conference,LREC,CORE2023,B,none,lrec,4602.0,0,
+34,International Workshop on MultiAgent Based Simulation,MABS,CORE2023,C,none,mabs,4602.0,0,
+40,MACIS: International Conference of Mathematical Aspects of Computer and Information Sciences,MACIS,CORE2023,C,none,macis,4613.0,0,
+29,Symposium Model Analysis and Simulation of Computer and Telecommunications Systems,MASCOTS,CORE2023,B,none,mascots,4606.0,36,5.0
+14,IEEE International Conference on Mobile Ad-hoc and Sensor Systems,MASS,CORE2023,B,none,mass,4606.0,0,
+22,International Conference on Modelling Decisions for Artificial Intelligence,MDAI,CORE2023,B,none,mdai,4602.0,0,
+10,International Conference on Mobile Data Management,MDM,CORE2023,B,none,mdm,4605.0,1,3.0
+0,International Conference on Management of Digital EcoSystems,MEDES,CORE2023,C,none,medes,4606.0,29,4.3
+14,International Conference on Model and Data Engineering,MEDI,CORE2023,C,none,medi,4605.0,0,
+17,World Congress on Medical and Health Informatics,MEDINFO,CORE2018,B,none,medinfo,806.0,2,4.5
+35,International Conference on Formal Methods and Models for Co-Design,MEMOCODE,CORE2023,C,none,memocode,4612.0,0,
+17,International Symposium on Mathematical Foundations of Computer Science,MFCS,CORE2023,A,none,mfcs,4613.0,1,5.0
+3,International Conference on Mathematical Foundations of Programming Semantics,MFPS,CORE2023,B,none,mfps,4613.0,0,
+48,Medical Image Computing and Computer-Assisted Intervention,MICCAI,CORE2023,A,none,miccai,4601.0,0,
+8,International Conference in Methodologies and Intelligent Systems for Technology Enhanced Learning,MIS4TEL,CORE2023,National,none,mis4tel,4601.0,0,
+15,Multimedia and Network Information Systems,MISSI,CORE2023,National,none,missi,4603.0,0,
+7,International Conference on Methods and Models in Automation and Robotics,MMAR,CORE2023,National,none,mmar,4611.0,0,
+25,International Conference on Multimedia Modelling,MMM,CORE2023,B,none,mmm,4603.0,0,
+33,ACM International Conference on Mobile Computing and Networking,MOBICOM,CORE2023,A*,none,mobicom,4606.0,0,
+18,ACM Symposium on Mobile Ad Hoc Networking and Computing,MOBIHOC,CORE2023,A,none,mobihoc,4606.0,0,
+15,"International Conference on Model Driven Engineering Languages and Systems (Previously UML, changed in 2005)",MODELS,CORE2023,A,none,models,4612.0,7,5.0
+17,International Conference on Model-Driven Engineering and Software Development,MODELSWARD,CORE2023,C,none,modelsward,4606.0,0,
+45,Mathematics of Program Construction,MPC,CORE2023,B,none,mpc,4613.0,0,
+48,International Conference on Managed Programming Languages and Runtimes (was ManLang and previously Principles and Practice of Programming in Java: PPPJ),MPLR,CORE2023,C,none,pppj,4612.0,0,
+23,IEEE International Working Conference on Mining Software Repositories,MSR,CORE2023,A,none,msr,4612.0,10,4.7
+39,IEEE Conference on Mass Storage Systems and Technologies,MSST,CORE2023,National,none,mss,4606.0,0,
+38,"ACM/IEEE International Conference on Modelling, Analysis and Simulation of Wireless and Mobile Systems",MSWIM,CORE2023,A,none,mswim,4606.0,40,5.0
+37,Machine Translation Summit,MT SUMMIT,CORE2023,C,none,mtsummit,4602.0,0,
+7,Mobile and Ubiquitous Multimedia (ACM),MUM,CORE2023,B,none,mum,4608.0,0,
+38,Machine Vision Applications,MVA,CORE2023,National,none,mva,4603.0,0,
+40,ACM/IFIP/USENIX International Middleware Conference,Middleware,CORE2023,A,none,middleware,4606.0,1,4.0
+12,International Conference on Human-Computer Interaction with Mobile Devices and Services,MobileHCI,CORE2023,B,none,mhci,4608.0,4,5.0
+8,International Conference on Mobile and Ubiquitous Systems: Networks and Services,Mobiquitous,CORE2023,C,none,mobiquitous,4606.0,0,
+2,"ACM SIGMOBILE International Conference on Mobile Systems, Applications and Services",Mobisys,CORE2023,A,none,mobisys,4606.0,5,5.0
+1,Mensch & Computer,MuC,CORE2023,National,none,mc,4608.0,0,
+47,North American Association for Computational Linguistics,NAACL,CORE2023,A,none,naacl,4602.0,1,5.0
+12,IEEE International Symposium on Network Computing and Applications,NCA,CORE2023,B,none,nca,4606.0,1,5.0
+8,Usenix Network and Distributed System Security Symposium,NDSS,CORE2023,A*,none,ndss,4604.0,1,5.0
+3,Applications of Natural Language to Data Bases,NLDB,CORE2023,C,none,nldb,4602.0,0,
+36,IEEE Network Operations and Management Symposium,NOMS,CORE2023,B,none,noms,4606.0,0,
+34,Network and Operating System Support for Digital Audio and Video,NOSSDAV,CORE2023,B,none,nossdav,4606.0,5,5.0
+15,IFIP International Conference on Network and Parallel Computing,NPC,CORE2023,C,none,npc,4606.0,0,
+48,"Symposium on Networked Systems, Design and Implementation",NSDI,CORE2023,National,none,nsdi,4606.0,8,5.0
+39,New Security Paradigms Workshop,NSPW,CORE2023,C,none,nspw,4604.0,0,
+30,International Conference on network and System Security,NSS,CORE2023,B,none,nss,4604.0,0,
+40,New Technologies Mobility and Security,NTMS,CORE2023,C,none,ntms,4604.0,0,
+16,IFIP International Conference on Networking,Networking,CORE2023,B,none,networking,4606.0,1,5.0
+4,Advances in Neural Information Processing Systems (was NIPS),NeurIPS,CORE2023,A*,none,nips,4611.0,0,
+42,Nordic Conference on Human-Computer Interaction,NordiCHI,CORE2023,Regional,none,nordichi,4608.0,0,
+22,ACM Conference on Object Oriented Programming Systems Languages and Applications,OOPSLA,CORE2023,A,none,oopsla,4612.0,0,
+26,International Symposium on Open Collaboration (was International Symposiums on Wikis),OPENSYM,CORE2023,C,none,wikis,4612.0,0,
+17,International Conference on Principles of Distributed Systems,OPODIS,CORE2023,B,none,opodis,4606.0,0,
+10,Usenix Symposium on Operating Systems Design and Implementation,OSDI,CORE2023,A*,none,osdi,4606.0,0,
+15,Australian Computer Human Interaction Conference,OZCHI,CORE2023,Regional,none,ozchi,4608.0,13,5.0
+38,Practical Applications of Agents and Multiagent Systems,PAAMS,CORE2023,National,none,paams,4602.0,3,4.0
+12,International Conference on Practical Applications of Computational Biology & Bioinformatics,PACBB,CORE2023,National,none,pacbb,4602.0,0,
+3,International Conference on Parallel Architecture and Compilation Techniques,PACT,CORE2023,B,none,IEEEpact,4606.0,1,4.0
+9,ACM SIGSIM Conference on Principles of Advanced Discrete Simulation (was Parallel and Distributed Simulation),PADS,CORE2023,B,none,pads,4606.0,0,
+28,Passive and Active Measurement Conference,PAM,CORE2023,B,none,pam,4606.0,0,
+24,Parallel Computing,PARCO,CORE2023,C,none,parco,4606.0,0,
+19,Pacific-Rim Conference on Multimedia,PCM,CORE2020,C,none,pcm,4603.0,0,
+45,International Picture Coding Symposium,PCS,CORE2023,C,none,pcs,4603.0,0,
+27,Participatory Design Conference,PDC,CORE2018,B,none,pdc,806.0,0,
+0,"International Conference on Parallel and Distributed Computing, Applications and Technologies",PDCAT,CORE2023,C,none,pdcat,4606.0,0,
+9,"Euromicro International Conference on Parallel, Distributed and Network Based Processing",PDP,CORE2023,C,none,pdp,4606.0,0,
+7,ACM SIGPLAN Workshop on Partial Evaluation and Program Manipulation,PEPM,CORE2023,C,none,pepm,4612.0,0,
+22,IEEE International Conference on Pervasive Computing and Communications,PERCOM,CORE2023,A*,none,percom,4608.0,48,5.0
+19,"IFIP International Symposium on Computing Performance, Modelling, Measurement and Evaluation",PERFORMANCE,CORE2023,Unranked,none,performance,4612.0,0,
+45,Privacy Enhancing Technologies Symposium (was International Workshop of Privacy Enhancing Technologies),PETS,CORE2023,A,none,popets,4604.0,2,5.0
+11,Pacific Conference on Computer Graphics and Applications,PG,CORE2023,Unranked,none,pg,4607.0,0,
+15,IEEE International Symposium on Personal and Indoor Mobile Radio Conference,PIMRC,CORE2023,B,none,pimrc,4606.0,0,
+13,International Conference on Practice and Theory in Public Key Cryptography,PKC,CORE2023,B,none,pkc,4604.0,0,
+34,ACM-SIGPLAN Conference on Programming Language Design and Implementation,PLDI,CORE2023,A*,none,pldi,4612.0,0,
+20,ACM Symposium on Principles of Distributed Computing,PODC,CORE2023,A*,none,podc,4606.0,0,
+3,ACM SIGMOD-SIGACT-SIGART Conference on Principles of Database Systems,PODS,CORE2023,A*,none,pods,4605.0,0,
+33,ACM-SIGACT Symposium on Principles of Programming Languages,POPL,CORE2023,A*,none,popl,4612.0,0,
+19,International Conference on Principles of Security and Trust,POST,CORE2023,Unranked,none,post,4604.0,0,
+5,International Conference on Parallel Processing and Applied Mathematics,PPAM,CORE2023,National,none,ppam,4606.0,4,4.7
+16,International Conference on Principles and Practice of Declarative Programming,PPDP,CORE2023,C,none,ppdp,4613.0,0,
+45,Annual PPIG Workshop,PPIG,CORE2018,B,none,ppig,806.0,0,
+26,Parallel Problem Solving from Nature,PPSN,CORE2023,A,none,ppsn,4611.0,1,5.0
+41,International Workshop on Post-Quantum Cryptography,PQCrypto,CORE2023,C,none,pqcrypto,4604.0,0,
+12,Pacific Rim International Conference on Artificial Intelligence,PRICAI,CORE2023,B,none,pricai,4602.0,0,
+18,International Conference on Principles of Practice in Multi-Agent Systems (prior to 2009 was Pacific Rim International Workshop on Multi-Agents),PRIMA,CORE2023,B,none,prima,4602.0,0,
+49,Product Focused Software Process Improvement,PROFES,CORE2023,B,none,profes,4612.0,11,4.2
+16,Pacific Symposium on Biocomputing,PSB,CORE2023,National,none,psb,4601.0,0,
+43,Prague Stringology Conference,PSC,CORE2023,National,none,stringology,4613.0,0,
+46,Privacy in Statistical Databases,PSD,CORE2023,C,none,psd,4604.0,0,
+0,Ershov Conference,PSI,CORE2020,National,none,ershov,4612.0,0,
+34,"Annual Conference on Privacy, Security and Trust",PST,CORE2023,C,none,pst,4604.0,0,
+37,IEEE Pacific Visualization Symposium (was APVIS),PacificVis,CORE2023,B,none,pacificvis,4608.0,0,
+30,INTERNATIONAL SYMPOSIUM ON PERVASIVE DISPLAYS,PerDis,CORE2023,B,none,perdis,4608.0,0,
+8,International Conference on Persuasive Technology,Persuasive,CORE2018,B,none,persuasive,806.0,0,
+36,International Conference on the Application and Theory of Petri Nets and Concurrency,Petri Nets,CORE2023,B,none,apn,4606.0,0,
+23,IFIP WG8.1 Working Conference on the Practice of Enterprise Modeling,PoEM,CORE2023,Unranked,none,ifip8-1,46.0,0,
+39,International Conference on the Quality of Information and Communications Technology,QUATIC,CORE2023,C,none,quatic,4612.0,1,5.0
+4,"International Conference on Heterogeneous Networking for Quality, Reliability, Security and Robustness (was International Conference on Quality of Service in Heterogeneous Wired/Wireless Networks)",Qshine,CORE2023,C,none,qshine,4606.0,0,
+25,"The International Symposium on Research in Attacks, Intrusions and Defenses (was International Symposium on Recent Advances in Intrusion Detection)",RAID,CORE2023,A,none,raid,4604.0,0,
+30,International Conference on Relational and AlgebraicMethods in Computer Science (was International Conference on Relational Methods in Computer Science RelMiCS),RAMiCS,CORE2023,C,none,RelMiCS,4613.0,0,
+45,International Workshop on Randomization and Computation,RANDOM,CORE2021,A,none,random,4613.0,0,
+29,International Conference on Recent Advances in Natural Language Processing,RANLP,CORE2023,National,none,ranlp,4602.0,0,
+33,International Conference on Research Challenges in Information Science,RCIS,CORE2023,B,none,rcis,46.0,0,
+48,IEEE International Requirements Engineering Conference,RE,CORE2023,A,none,re,4612.0,8,5.0
+44,International Conference on Computational Molecular Biology,RECOMB,CORE2023,B,none,recomb,4601.0,0,
+48,International Workshop on Requirements Engineering: Foundation for Software Quality,REFSQ,CORE2023,B,none,refsq,4612.0,5,4.0
+7,Conference on RFID Security,RFIDSec,CORE2018,C,none,rfidsec,803.0,0,
+16,IEEE International Symposium on Rapid System Prototyping (was IEEE Symposium on Rapid Prototyping),RSP,CORE2023,C,none,rsp,4612.0,0,
+13,Robotics: Science and Systems,RSS,CORE2018,A*,none,rss,801.0,0,
+39,IEEE Real-Time and Embedded Technology and Applications Symposium,RTAS,CORE2023,A,none,rtas,4606.0,1,4.0
+12,International Conference on Embedded and Real Time Computing Systems and Applications,RTCSA,CORE2023,B,none,rtcsa,4606.0,0,
+27,International Conference on Real-Time and Network Systems,RTNS,CORE2023,National,none,rtns,4606.0,0,
+5,Real Time Systems Symposium,RTSS,CORE2023,A*,none,rtss,4606.0,0,
+38,International Conference on Runtime Verification (was workshop pre 2010),RV,CORE2023,B,none,rv,4612.0,6,4.2
+34,ACM International Conference on Recommender Systems,RecSys,CORE2023,A,none,recsys,4605.0,0,
+30,International Joint Conference on Rules and Reasoning,RuleML+RR,CORE2023,B,none,rulemlrr,4602.0,0,
+16,ACM Symposium on Applied Computing,SAC,CORE2023,Unranked,none,sac,4601.0,0,
+23,Selected Areas in Cryptography,SAC,CORE2023,B,none,sacrypt,4604.0,0,
+18,International Symposium on Applied Computational Intelligence and Informatics,SACI,CORE2023,National,none,saci,4602.0,0,
+15,"ACM Symposium on Access Control Models and Technologies (previously ACM Workshop on Role-Based Access Control, RBAC, changed in 2000)",SACMAT,CORE2023,C,none,sacmat,4604.0,1,4.0
+3,"International Conference on Computer Safety, Reliability and Security",SAFECOMP,CORE2023,B,none,safecomp,4604.0,0,
+13,International Symposium on Algorithmic Game Theory,SAGT,CORE2023,B,none,sagt,4613.0,0,
+31,"IEEE International Conference on Software Analysis, Evolution and Reengineering",SANER,CORE2023,A,none,wcre,4612.0,0,
+21,Static Analysis Symposium,SAS,CORE2023,B,none,sas,4612.0,21,4.8
+38,Simulation and Synthesis in Medical Imaging,SASHIMI,CORE2023,C,none,sashimi-ws,4602.0,0,
+49,International Conference on Theory and Applications of Satisfiability Testing,SAT,CORE2023,A,none,sat,4602.0,1,5.0
+4,"International Conference for High Performance Computing, Networking, Storage and Analysis (was Supercomputing Conference)",SC,CORE2023,A,none,sc,4606.0,0,
+49,ACM SIGGRAPH/Eurographics Symposium on Computer Animation,SCA,CORE2023,B,none,sca,4607.0,1,4.0
+25,IEEE International Working Conference on Source Code Analysis and Manipulation,SCAM,CORE2023,C,none,scam,4612.0,0,
+9,Conference on Security and Cryptography for Networks,SCN,CORE2023,National,none,scn,4604.0,0,
+6,International Workshop on Software and Compilers for Embedded Systems,SCOPES,CORE2023,C,none,scopes,4606.0,0,
+32,SIAM International Conference on Data Mining,SDM,CORE2023,A,none,sdm,4605.0,3,5.0
+46,International Symposium on Experimental Algorithms,SEA,CORE2023,B,none,wea,4613.0,0,
+8,Euromicro Conference on Software Engineering and Advanced Applications,SEAA,CORE2023,B,none,euromicro,4612.0,0,
+37,Asia-Pacific Conference on Simulated Evolution and Learning,SEAL,CORE2020,B,none,seal,4611.0,0,
+36,International Symposium on Software Engineering for Adaptive and Self-Managing Systems,SEAMS,CORE2023,A,none,seams,4612.0,2,2.0
+28,"IEEE International Conference on Sensing, Communication and Networking",SECON,CORE2023,B,none,secon,4606.0,0,
+40,International Conference on Information Security and Cryptography,SECRYPT,CORE2023,C,none,secrypt,4604.0,0,
+8,International Conference on Software Engineering and Formal Methods,SEFM,CORE2023,B,none,sefm,4612.0,0,
+19,ACM Conference on Embedded Networked Sensor Systems,SENSYS,CORE2023,A*,none,sensys,4606.0,0,
+12,"ACIS Conference on Software Engineering Research, Management and Applications",SERA,CORE2023,C,none,sera,4612.0,1,4.0
+47,IEEE Congress on Services,SERVICES,CORE2023,B,none,services,4606.0,0,
+37,"International Symposium on Software Engineering: Theories, Tools, and Applications",SETTA,CORE2023,National,none,setta,4612.0,0,
+28,SGAI International Conference on Artificial Intelligence,SGAI,CORE2023,National,none,sgai,4602.0,0,
+42,Symposium on Geometry Processing,SGP,CORE2023,B,none,sgp,4607.0,0,
+14,"ACM Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication",SIGCOMM,CORE2023,A*,none,sigcomm,4606.0,1,5.0
+12,ACM Special Interest Group on Computer Science Education Conference,SIGCSE,CORE2023,A,none,sigcse,4608.0,0,
+46,ACM SIG International Conference on Computer Graphics and Interactive Techniques,SIGGRAPH,CORE2023,A*,none,siggraph,4607.0,1,5.0
+35,ACM International Conference on Research and Development in Information Retrieval,SIGIR,CORE2023,A*,none,sigir,4605.0,0,
+26,ACM Information Technology Education,SIGITE,CORE2023,National,none,sigite,4608.0,1,
+46,Measurement and Modeling of Computer Systems,SIGMETRICS,CORE2023,A*,none,sigmetrics,4612.0,0,
+13,ACM Special Interest Group on Management of Data Conference,SIGMOD,CORE2023,A*,none,sigmod,4605.0,0,
+28,ACM International Conference on Advances in Geographic Information Systems,SIGSPATIAL,CORE2023,A,none,gis,4601.0,0,
+11,ACM SIGUCCS Conference on User Services,SIGUCCS,CORE2023,National,none,siguccs,4601.0,0,
+43,Annual Meeting of the Special Interest Group on Discourse and Dialog,SIGdial,CORE2023,B,none,sigdial,4602.0,0,
+49,"International Conference on Simulation and Modeling Methodologies, Technologies and Applications",SIMULTECH,CORE2021,C,none,simultech,4606.0,0,
+42,International Conference on Security of Information and Networks,SIN,CORE2023,C,none,sin,4604.0,0,
+39,International Colloquium on Structural Information and Communication Complexity,SIROCCO,CORE2023,B,none,sirocco,4613.0,1,4.0
+48,International Conference on Similarity Search and Applications,SISAP,CORE2023,B,none,sisap,4605.0,0,
+13,International Symposium on Intelligent Systems and Informatics,SISY,CORE2023,National,none,sisy,4602.0,0,
+44,International Conference on Semantics Knowledge and Grid,SKG,CORE2023,National,none,skg,4606.0,0,
+13,International Conference on Software Language Engineering,SLE,CORE2023,B,none,sle,4612.0,6,4.8
+42,"IEEE Conference on Systems, Man and Cybernetics",SMC,CORE2023,B,none,smc,4608.0,6,4.8
+11,"International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing",SNPD,CORE2023,C,none,snpd,4612.0,0,
+29,IEEE International Conference on Service-Oriented Computing and Applications,SOCA,CORE2023,C,none,soca,4606.0,0,
+41,ACM/SIAM Symposium on Discrete Algorithms,SODA,CORE2023,A*,none,soda,4613.0,0,
+39,Current Trends in Theory and Practice of Computer Science,SOFSEM,CORE2023,B,none,sofsem,46.0,0,
+12,Conference on Software in Telecommunications and Computer Networks,SOFTCOM,CORE2023,National,none,softcom,4606.0,0,
+5,ACM SIGOPS Symposium on Operating Systems Principles,SOSP,CORE2023,A*,none,sosp,4606.0,0,
+6,Symposium On Usable Privacy and Security,SOUPS,CORE2023,B,none,soups,4608.0,0,
+13,IEEE Symposium on Security and Privacy,SP,CORE2023,A*,none,sp,4604.0,0,
+0,Software Product Lines Conference,SPLC,CORE2023,B,none,splc,4612.0,0,
+2,Symposium on Reliable Distributed Systems,SRDS,CORE2023,B,none,srds,4606.0,2,5.0
+35,International Symposium on Search Based Software Engineering,SSBSE,CORE2023,B,none,ssbse,4612.0,0,
+39,International Conference on Scientific and Statistical Data Base Management,SSDBM,CORE2023,B,none,ssdbm,4605.0,0,
+24,Structural and Syntactical Pattern Recognition,SSPR,CORE2023,B,none,sspr,4603.0,0,
+21,ACM Symposium on Software Reusability,SSR,CORE2018,A,none,ssr,803.0,0,
+4,"Symposium on Stabilization, Safety, and Security of Distributed Systems",SSS,CORE2023,C,none,sss,4604.0,0,
+40,International Symposium on Spatial and Temporal Databases,SSTD,CORE2023,B,none,ssd,4601.0,0,
+1,International Symposium on Theoretical Aspects of Computer Science,STACS,CORE2023,A,none,stacs,4613.0,2,4.0
+23,ACM Symposium on Theory of Computing,STOC,CORE2023,A*,none,stoc,4613.0,1,5.0
+47,International Symposium on Symbolic and Numeric Algorithms for Scientific Computing,SYNASC,CORE2023,National,none,synasc,4613.0,1,3.0
+15,The ACM International System and Storage Conference,SYSTOR,CORE2023,National,none,systor,4606.0,0,
+40,International Conference on Security and Privacy for Communication Networks,SecureComm,CORE2023,C,none,securecomm,4604.0,2,3.0
+25,Semantics - International Conference on Semantic Systems,Semantics,CORE2023,National,none,i-semantics,4605.0,0,
+34,SIGGRAPH Asia,SiggraphA,CORE2023,Unranked,none,siggrapha,4607.0,5,5.0
+34,International Symposium on Computational Geometry,SoCG,CORE2023,A,none,compgeom,4613.0,1,5.0
+30,The Symposium of Combinatorial Search,SoCS,CORE2023,B,none,socs,4602.0,0,
+13,"International Conference on Intelligent Software Methodologies, Tools, and Techniques (was International Conference on Software Methods and Tools)",SoMeT,CORE2023,C,none,somet,4612.0,0,
+45,International Conference on Theorem Proving with Analytic Tableaux and Related Methods,TABLEAUX,CORE2023,B,none,tableaux,4613.0,0,
+38,Tools and Algorithms for Construction and Analysis of Systems,TACAS,CORE2023,A,none,tacas,4612.0,1,5.0
+35,International Conference on Tests and Proofs,TAP,CORE2023,C,none,tap,4612.0,0,
+33,Theoretical Aspects of Rationality and Knowledge,TARK,CORE2023,A,none,tark,4613.0,0,
+2,International Symposium on Theoretical Aspects of Software Engineering,TASE,CORE2023,National,none,tase,4612.0,0,
+35,Theory of Cryptography Conference,TCC,CORE2023,A,none,tcc,4604.0,0,
+9,"Tangible, Embedded, and Embodied Interaction",TEI,CORE2023,B,none,tei,4608.0,0,
+49,International Symposium on Temporal Representation and Reasoning,TIME,CORE2023,C,none,time,4602.0,0,
+12,Technology of Object-Oriented Languages and Systems,TOOLS,CORE2020,B,none,tools,4612.0,0,
+0,International Conference on Theory and Practice of Digital Libraries (was ECDL until 2010),TPDL,CORE2023,B,none,ercimdl,4605.0,0,
+28,International Conference on Technical Debt,TechDebt,CORE2023,Unranked,none,techdebt2019.html,4612.0,0,
+40,IEEE Region 10 Conference,Tencon,CORE2023,C,none,tencon,46.0,1,
+13,Testbeds and Research Infrastructures for the Development of Networks and Communities,TridentCom,CORE2023,National,none,tridentcom,4606.0,0,
+3,"International Conference on Trust, Privacy and Security in Digital Business",TrustBus,CORE2023,B,none,trustbus,4604.0,0,
+4,"International Conference on Trust, Security and Privacy in Computing and Communications",TrustCom,CORE2023,B,none,trustcom,4604.0,1,4.0
+19,Conference in Uncertainty in Artificial Intelligence,UAI,CORE2023,A,none,uai,4602.0,0,
+6,International Conference on Unconventional Computation and Natural Computation (was International Conference on Unconventional Computation),UC,CORE2023,C,none,uc,4613.0,0,
+15,Utility and Cloud Computing,UCC,CORE2023,Unranked,none,ucc,4606.0,0,
+24,ACM Symposium on User Interface Software and Technology,UIST,CORE2023,A*,none,uist,4608.0,1,5.0
+9,"International Conference on User Modelling, Adaptation, and Personalization (was AH and UM)",UMAP,CORE2023,B,none,um,4608.0,2,5.0
+7,Usenix Annual Technical Conference,USENIX,CORE2023,A,none,usenix,4606.0,0,
+9,Usenix Security Symposium,USENIX-Security,CORE2023,A*,none,uss,4604.0,0,
+39,ACM International Joint Conference on Pervasive and Ubiquitous Computing (PERVASIVE and UbiComp combined from 2013),UbiComp,CORE2023,Unranked,none,huc,4608.0,0,
+16,Conference on Visualization and Data Analysis,VDA,CORE2023,National,none,vda,4608.0,0,
+37,"International Meeting on High Performance Computing for Computational Science (previously International Meeting Vector and Parallel Processing, changed in 2002)",VECPAR,CORE2018,B,none,vecpar,805.0,0,
+24,The International Conference on Verification and Evaluation of Computer and Communication Systems,VECoS,CORE2023,C,none,vecos,4606.0,0,
+12,International Conference on Virtual Execution Environments,VEE,CORE2023,B,none,vee,4606.0,0,
+10,International Conference on Vehicle Technology and Intelligent Transport Systems,VEHITS,CORE2023,C,none,vehits,4606.0,0,
+20,Visual Information Communication and Interaction,VINCI,CORE2023,C,none,vinci,4608.0,0,
+49,"Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications (GRAPP and VISAPP combined from 2008)",VISIGRAPP,CORE2023,Unranked,none,visigrapp,4603.0,0,
+24,IEEE International Working Conference on Software Visualisation,VISSOFT,CORE2023,B,none,vissoft,4608.0,0,
+15,IEEE Symposium on Visual Languages and Human-Centric Computing (was VL),VL/HCC,CORE2023,B,none,vl,4608.0,1,4.0
+11,International Conference on Very Large Databases,VLDB,CORE2023,A*,none,vldb,4605.0,0,
+18,International Conference on VLSI Design,VLSID,CORE2023,National,none,vlsid,4606.0,0,
+16,"Verification, Model Checking and Abstract Interpretation",VMCAI,CORE2023,B,none,vmcai,4612.0,0,
+44,IEEE Conference on Virtual Reality and 3D User Interfaces,VR,CORE2023,A*,none,vr,4607.0,0,
+25,ACM Virtual Reality Software and Technology,VRST,CORE2023,A,none,vrst,4607.0,0,
+15,International Conference on Virtual Systems and MultiMedia,VSMM,CORE2020,B,none,vsmm,4607.0,0,
+20,IEEE Vehicular Technology Conference,VTC,CORE2023,B,none,vtc,4606.0,1,5.0
+16,International Workshop on Visualization for Cyber Security,VizSec,CORE2023,C,none,vizsec,4608.0,0,
+17,International Workshop on Web and Wireless Geographical Information Systems,W2GIS,CORE2023,C,none,w2gis,4601.0,0,
+42,Workshop on Algorithms in Bioinformatics,WABI,CORE2023,C,none,wabi,4601.0,0,
+25,IEEE Workshop on Applications of Computer Vision,WACV,CORE2023,A,none,wacv,4603.0,1,5.0
+14,Algorithms and Data Structures Symposium (was Workshop on Algorithms and Data Structures),WADS,CORE2023,B,none,wads,4613.0,0,
+13,International Workshop on the Algorithmic Foundations of Robotics,WAFR,CORE2023,C,none,wafr,4602.0,0,
+2,Workshop on the Arithmetic of Finite Fields,WAIFI,CORE2023,C,none,waifi,4613.0,0,
+24,International Conference on Web-Age Information Management,WAIM,CORE2017,C,none,waim,806.0,0,
+1,International Conference and Workshops on Algorithms and Computation,WALCOM,CORE2023,B,none,walcom,4613.0,0,
+47,Workshop on Approximation and Online Algorithms,WAOA,CORE2023,B,none,waoa,4613.0,0,
+41,Workshop on Algorithms And Models For The Web Graph,WAW,CORE2023,C,none,waw,4613.0,0,
+10,Workshop on Computer Architecture Education,WCAE,CORE2023,National,none,wcae,4608.0,0,
+34,International Workshop on Coding and Cryptography,WCC,CORE2020,B,none,wcc,4604.0,0,
+22,IEEE Wireless Communications and Networking Conference,WCNC,CORE2023,B,none,wcnc,4606.0,0,
+34,Wireless Days,WD,CORE2023,C,none,wd,4606.0,0,
+22,International Conference on Web Information Systems and Technologies,WEBIST,CORE2023,C,none,webist,46.0,0,
+22,International Workshops on Enabling Technologies: Infrastructures for Collaborative Enterprises,WETICE,CORE2023,C,none,wetice,4606.0,1,5.0
+10,International Workshop on Functional and Constraint Logic Programming,WFLP,CORE2023,C,none,wflp,4612.0,0,
+29,International Conference on Wireless Networks and Mobile Communications,WINCOM,CORE2023,National,none,wincom,4606.0,0,
+21,International Workshop on Information Security Applications,WISA,CORE2023,National,none,wisa,4604.0,0,
+23,International Conference on Web Information Systems Engineering,WISE,CORE2023,B,none,wise,4605.0,0,
+35,Workshop in Information Security Theory and Practices,WISTP,CORE2023,C,none,wistp,4604.0,0,
+24,International World Wide Web Conference,WWW,CORE2023,A*,none,www,4606.0,2,4.5
+15,International Workshop on the Web and Databases,WebDB,CORE2020,National,none,webdb,4605.0,0,
+37,"IEEE International Conference on Wireless and Mobile Computing, Networking and Communications",WiMob,CORE2023,B,none,wimob,4606.0,1,5.0
+21,"International Symposium on Modelling and Optimization in Mobile, Ad Hoc, and Wireless Networks",WiOpt,CORE2023,B,none,wiopt,4606.0,0,
+1,"IEEE International Symposium on a World of Wireless, Mobile and Multimedia Networks",WoWMoM,CORE2023,B,none,wowmom,4606.0,59,4.9
+9,World Conference on Information Systems and Technologies,WorldCIST,CORE2023,C,none,worldcist,46.0,11,4.9
+29,Conference on Agile Software Development,XP,CORE2023,B,none,xpu,4612.0,0,
+44,IEEE International Conference on e-Science and Grid Computing,e-Science,CORE2023,B,none,eScience,4606.0,0,
+13,International Conference of the Immersive Learning Research Network,iLRN,CORE2023,C,none,ilrn,4601.0,2,5.0
