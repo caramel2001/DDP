@@ -1,5 +1,11 @@
 ## Paper Grpah
 
+- https://github.com/caramel2001/DDP
+
+- To Run the App
+
+`streamlit run app.py`
+
 - Paper Topic Classification based on Computer Science Ontology (CSO) available <a href ="https://cso.kmi.open.ac.uk/download/version-3.3/cso_v3.3.csv">here</a>
 
   - Consists 14K topics and over 163K relationships
