@@ -116,6 +116,8 @@ with col2:
 
 st.dataframe(df.iloc[st.session_state.get('page',1)*10-10:st.session_state.get('page',1)*10])
 
+dblp_data= read_pubs_data_by_prof(settings['PAPER_DATA'],profid)
+
 col1,col2 = st.columns([1,1])
 with col1:
     st.subheader("Co-Authors Network")
@@ -133,10 +135,18 @@ with col1:
 
 with col2:
     st.subheader("Top Co-Authors")
+    st.markdown("<br><br>",unsafe_allow_html=True)
+    coauthors= []
+    for j in dblp_data:
+        authors= j.get('author',[])
+        if isinstance(authors,list):
+            coauthors.extend([(i['@pid'],i['#text']) for i in authors])
+    coauthors = pd.DataFrame(coauthors,columns=['pid','name'])
+    coauthors = coauthors[~coauthors['pid'].apply(lambda x: x in prof['DBLP_profile_link'])].value_counts().reset_index().rename(columns={0:'Colaboration Count','name':'Full Name'})
+    st.table(coauthors[['Full Name','Colaboration Count']].set_index('Full Name').head(20))
 
 st.divider()
 
-dblp_data= read_pubs_data_by_prof(settings['PAPER_DATA'],profid)
 if dblp_data is not None:
     dblp_data = pd.json_normalize(dblp_data,max_level=0)
 

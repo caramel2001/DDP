@@ -550,9 +550,9 @@ def get_granalur_topics_graph(scholar_data,scholar_id,year,citation_count = Fals
     else:
         temp = pd.json_normalize(prof_pubs[['semantic_topics','pub_year','num_citations']].to_dict('records'),meta=['num_citations','pub_year'],record_path='semantic_topics').groupby([0,'pub_year']).count().sort_values('num_citations',ascending=False)
     temp_after = temp[temp.index.get_level_values(1)>=year].groupby([0]).sum().sort_values('num_citations',ascending=False).head(10)
-    print(temp_after)
+    # print(temp_after)
     temp_before = temp[temp.index.get_level_values(1)<year].groupby([0]).sum().sort_values('num_citations',ascending=False)
-    print(temp_before)
+    # print(temp_before)
     temp_before = temp_before.loc[set(temp_after.index).intersection(set(temp_before.index))]
     temp_before.index = temp_before.index.str.title()
     temp_after.index = temp_after.index.str.title()
