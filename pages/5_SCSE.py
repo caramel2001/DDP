@@ -79,7 +79,7 @@ st.subheader('Conferences')
 dblp_data = read_pubs_data(settings['PAPER_DATA'])
 dblp_data = pd.json_normalize(dblp_data,max_level=0)
 dblp_data.drop_duplicates(subset=['@key'],inplace=True)
-print(dblp_data.shape)
+# print(dblp_data.shape)
 conf_data= pd.read_csv(settings['CONF_PATH'],index_col=[0])
 conf_topic =  pd.read_csv(settings['CONF_TOPIC_PATH'],index_col=[0])
 df = get_generalized_topics_data(dblp_data,conf_data,conf_topic)
@@ -99,7 +99,7 @@ with col1:
     treemap_df = get_treemap_data(dblp_data,conf_data)
     treemap_df= treemap_df[treemap_df['type']=='Conference Paper']
     treemap_df_grouped = treemap_df.groupby('Rank').sum()
-    print(treemap_df)
+    # print(treemap_df)
     fig = px.pie(treemap_df_grouped, values='count', names=treemap_df_grouped.index, color_discrete_sequence=px.colors.qualitative.Set2,title='Conference Paper Rank Distribution')
 
     st.plotly_chart(fig, use_container_width=True)

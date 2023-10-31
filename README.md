@@ -2,7 +2,7 @@ https://github.com/caramel2001/DDP
 
 To Run the App
 
-`streamlit run app.py`
+`streamlit run Intro.py`
 
 ## Paper Grpah
 
