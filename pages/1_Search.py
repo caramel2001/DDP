@@ -5,14 +5,15 @@ from config.config import settings
 from utils import read_pubs_data,read_prof_data,extract_titles
 from search.index import get_embeddings, create_index, query, save_index, load_index
 # import streamlit_antd_components as sac
-from components.card import get_card,get_paper_card
+from components.card import get_card,get_paper_card,get_paper_card_google
 st.set_page_config(layout="wide")
 st.session_state['profId'] = None
 st.session_state['PaperId'] = None
 
 # print(settings)
 def main():
-    paper_data = read_pubs_data(settings['PAPER_DATA'])
+    # paper_data = read_pubs_data(settings['PAPER_DATA'])
+    paper_data = pd.read_json(settings['SCHOLAR_PUBS'])
     # print(paper_data[0])
     prof_data = read_prof_data(settings['PROF_DATA'])
 
@@ -28,7 +29,7 @@ def main():
 
     if not os.path.exists(settings['PAPER_INDEX']): # if paper_index not present
         with st.spinner('Indexing Research papers for Searching'):
-            paper_embeddings = get_embeddings('all-MiniLM-L6-v2',extract_titles(paper_data))
+            paper_embeddings = get_embeddings('all-MiniLM-L6-v2',paper_data['title'].to_list())
             paper_index = create_index(paper_embeddings)
             
             save_index(paper_index,settings['PAPER_INDEX'])
@@ -99,18 +100,19 @@ def main():
                 col1, col2, col3 = st.columns(3,gap='large')
                 if not i>=num_results:
                     with col1:
-                        get_paper_card(paper_data[int(results.iloc[i]['ann'])],int(results.iloc[i]['ann']))
+                        get_paper_card_google(paper_data.iloc[int(results.iloc[i]['ann'])].to_dict(),int(results.iloc[i]['ann']))
                         #st.json(paper_data[int(results.iloc[i]['ann'])],expanded=False)
                 if not i+1>=num_results:
                     with col2:
-                        get_paper_card(paper_data[int(results.iloc[i+1]['ann'])],int(results.iloc[i+1]['ann']))
+                        get_paper_card_google(paper_data.iloc[int(results.iloc[i+1]['ann'])],int(results.iloc[i+1]['ann']))
                         #st.json(paper_data[int(results.iloc[i+1]['ann'])],expanded=False)
                 if not i+2>=num_results:
                     with col3:
-                        get_paper_card(paper_data[int(results.iloc[i+2]['ann'])],int(results.iloc[i+2]['ann']))
+                        get_paper_card_google(paper_data.iloc[int(results.iloc[i+2]['ann'])],int(results.iloc[i+2]['ann']))
                         #st.json(paper_data[int(results.iloc[i+2]['ann'])],expanded=False)
     print(st.session_state.get('profId'))
-    temp  = pd.json_normalize(paper_data)
+    print(st.session_state.get('paperId'))
+    # temp  = pd.json_normalize(paper_data)
     # print(temp[temp['title'].str.lower().str.contains("fine-grained physical memory reservation").fillna(False)])
     
 if __name__ == '__main__':

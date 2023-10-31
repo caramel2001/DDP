@@ -63,3 +63,24 @@ def get_paper_card(entry:dict,id):
     ],size='small',key=f"paperId-{paper_id}")
     if st.button("Select Paper",type='primary',key=f"more-info-paper-id-{paper_id}"):
         st.session_state['paperId'] = paper_id
+    
+
+def get_paper_card_google(entry:dict,id):
+    name = entry['title']
+    paper_link = entry.get("pub_url","")
+    authors = entry.get('author',"")
+    if pd.isna(entry['pub_year']):
+        date =  None
+    else:
+        date = int(entry['pub_year'])
+    citationCount = int(entry['num_citations'])
+    st.markdown(f"##### {name}")
+    st.markdown(f"Paper Published on : **{date}**")
+    st.markdown(f"<div style=width:90%><b>Authors</b>: {authors}</p></div>",unsafe_allow_html=True)
+    st.markdown(f"<div style=width:90%><b>Citation Count</b>: {citationCount}</p></div>",unsafe_allow_html=True)
+    paper_id=id
+    x = sac.buttons([
+    sac.ButtonsItem(icon='newspaper',label='View Paper',color = "#ccc",href=paper_link,disabled=True if paper_link == "" or paper_link is None else False),
+    ],size='small',key=f"paperId-{paper_id}")
+    if st.button("Select Paper",type='primary',key=f"more-info-paper-id-{paper_id}"):
+        st.session_state['paperId'] = paper_id

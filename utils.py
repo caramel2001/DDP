@@ -45,7 +45,8 @@ def read_pubs_data_by_prof(path,profid):
     pubs= []
     data = pd.read_json(path)
     data = data['publication_json'].iloc[profid]
-
+    if data is None:
+        return data
     return transform_data(data)
 
 def extract_titles(data):

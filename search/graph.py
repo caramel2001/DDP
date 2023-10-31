@@ -14,9 +14,22 @@ import plotly.express as px
 import pandas as pd
 from tqdm import tqdm
 import plotly.graph_objects as go
-
+import streamlit as st
+import matplotlib.colors as mcolors
+from matplotlib.cm import ScalarMappable
 # from cso_classifier import CSOClassifier
 # cc = CSOClassifier(modules = "both", enhancement = "first", explanation = True)
+NODE_SIZE_FACTOR = 0.7
+CIT_TO_SIZE_EXPONENT = 0.41
+CIT_TO_SIZE_SCALAR = 20
+LOG_OFFSET_FACTOR = 500
+CONFERENCE_NODE_SIZE = 3
+PY_2_JS_SCALE = 0.15
+NUM_EDGES = 300
+STROKE_WIDTH_FACTOR = 0.075
+EDGE_OPACITY_PERCENTILE = 0.9
+EDGE_OPACITY_POWER = 3
+MAX_EDGE_OPACITY = 1
 
 RESPONSE_MAGIC = b'CPGR'  # Connected Papers Graph Response
 MINIMAL_LENGTH = 16
@@ -104,7 +117,9 @@ def parse_binary_response(paper_id, response):
         "data": data
     }
 
+@st.cache_data
 def get_graph(paper_id):
+    print("Getting Data.....")
     status = get_graph_status(paper_id)
     if status['rebuild_available']:
         print("Buildling Graph.....")
@@ -158,6 +173,44 @@ def plot_coauthor_bar(G):
     fig.update_layout(plot_bgcolor='rgba(0,0,0,0)')
     return fig
 
+
+def get_color_map():
+    years = [i for i in range(2010,2023)]
+    a = np.linspace(0.2,0.9,len(set(years)))
+    years = list(set(years))
+    years.sort()
+    data ={}
+    for i in range(len(years)):
+        data[years[i]] = f"rgba(13, 110, 253,{a[i]})"
+    # Define the data
+    fig = plt.figure(figsize=(20, 1))
+    # Extract the alpha values from the data
+    alphas = [float(color.split(',')[3][:-1]) for color in data.values()]
+    # Define a custom colormap with blue color
+    cmap = mcolors.LinearSegmentedColormap.from_list("Custom Blue", [(13/255, 110/255, 253/255, alpha) for alpha in alphas])
+
+    # Create a ScalarMappable object
+    sm = ScalarMappable(cmap=cmap, norm=plt.Normalize(vmin=min(alphas), vmax=max(alphas)))
+    sm.set_array([])  # Set an empty array
+
+    # Create a colorbar
+    cbar = plt.colorbar(sm, orientation='horizontal', ticks=[])
+    min_year = min(data.keys())
+    max_year = max(data.keys())
+    cbar.ax.text(0.05, 0, str(min_year),fontsize=12)
+    cbar.ax.text(0.95, 0, str(max_year), fontsize=12)
+    # Customize the colorbar
+    cbar.set_label('Publication Year', rotation=0, fontsize=10)
+    ax = plt.gca()  # get current axis
+    ax.spines['right'].set_visible(False)
+    ax.spines['top'].set_visible(False)
+    ax.spines['left'].set_visible(False)
+    ax.spines['bottom'].set_visible(False)
+    ax.set_xticks([])  # remove x ticks
+    ax.set_yticks([])  # remove y ticks
+    # Display the colorbar
+    return fig
+
 def get_pyvis_graph(paper_id):
     script_path = os.path.abspath(__file__)
     script_dir = os.path.dirname(script_path)
@@ -171,13 +224,12 @@ def get_pyvis_graph(paper_id):
     data = data['data']
     nodes = list(data['nodes'].values())
     years = [i['year'] for i in nodes]
-    a = np.linspace(0.5,1,len(set(years)))
+    a = np.linspace(0.2,0.9,len(set(years)))
     years = list(set(years))
     years.sort()
     color_map ={}
     for i in range(len(years)):
         color_map[years[i]] = f"rgba(13, 110, 253,{a[i]})"
-    
     def split_string_into_lines(input_string, words_per_line=10):
         if input_string is None:
             return ""
@@ -187,34 +239,42 @@ def get_pyvis_graph(paper_id):
             line = ' '.join(words[i:i + words_per_line])
             lines.append(line)
         return '\n'.join(lines)
-
+    edge_strengths = [i[2] for i  in data['edges']]
+    edge_strengths.sort()
+    percentile_index = int(edge_strengths.__len__() * EDGE_OPACITY_PERCENTILE)
+    max_edge = edge_strengths[percentile_index]
+    draw_strength = [(i[2] / max_edge) ** EDGE_OPACITY_POWER * MAX_EDGE_OPACITY for i in data['edges']]
+    min_edge =edge_strengths[max(0, data['edges'].__len__() - NUM_EDGES)]
+    edges = []
+    for i in data['edges']:
+        if i[2] >= min_edge:
+            i.append((i[2] / max_edge) ** EDGE_OPACITY_POWER * MAX_EDGE_OPACITY)
+            edges.append(i)
     G = nx.Graph()
+    # print(nodes)
     for i in nodes:
+        cit_count = i.get('citations_length', 0)
+        node_size = (NODE_SIZE_FACTOR *(cit_count ** CIT_TO_SIZE_EXPONENT + CIT_TO_SIZE_SCALAR))/(np.log(cit_count + LOG_OFFSET_FACTOR)/np.log(LOG_OFFSET_FACTOR))
         abstract = split_string_into_lines(i['abstract'], words_per_line=15)
-        hover_data = f"""Title : {i['title']} \n Pub Date : {i['publicationDate']} \n  Citations : {i['citations_length']} \n Authors :  {",".join([j['name'] for j in i['authors']])} \n Abstract : {abstract}"""
+        hover_data = f"""Title : {i.get('title','')} \n Pub Date : {i.get('publicationDate',"")} \n  Citations : {i.get('citations_length',None)} \n Authors :  {",".join([j.get('name','') for j in i.get('authors',[])])} \n Abstract : {abstract}"""
         if i['id'] == nodes[0]['id']:
-            G.add_node(i['id'],label = f"{i['authors'][0]['name']} et al, {i['year']}",color="#e63946",size=i['citations_length']+20,x=i['pos'][0],y=i['pos'][1],title=hover_data)
+            G.add_node(i['id'],label = f"{i['authors'][0]['name']} et al, {i['year']}",color="#e63946",size=node_size,x=i['pos'][0],y=i['pos'][1],title=hover_data)
             continue
-        G.add_node(i['id'],label = f"{i['authors'][0]['name']} et al, {i['year']}",color=color_map[i['year']],size=i['citations_length']+20,x=i['pos'][0],y=i['pos'][1],title=hover_data)
-    for i in data['edges'][:500]:
-        G.add_edge(i[0],i[1],color=f"rgba(20, 33, 61,{i[2]*5})",title="Similarity : {:.3f}".format(i[2]))
+        G.add_node(i['id'],label = f"{i['authors'][0]['name']} et al, {i['year']}",color=color_map[i['year']],size=node_size,x=i['pos'][0],y=i['pos'][1],title=hover_data)
+    for i in edges:
+        G.add_edge(i[0],i[1],color=f"rgba(20, 33, 61,{i[3]})",title="Similarity : {:.3f}".format(i[2]))
     nt = Network(height="900px", width="100%", bgcolor="rgba(255,255,255,0)", font_color="#1d3557",filter_menu=True,neighborhood_highlight=True,notebook=True,cdn_resources='in_line')
     # populates the nodes and edges data structures
     nt.from_nx(G)
-    # nt.barnes_hut()
-    # for node,i in zip(nt.nodes,nodes):
-            
-    #         node["title"] = hover_data
-    # nt.toggle_physics(True)
+    # nt.toggle_physics(False)
     # nt.show_buttons(filter_=True)
-
     nt.set_options("""
     const options = {
     "nodes": {
         "borderWidthSelected": 5,
         "opacity": 1,
         "font": {
-        "size": 24,
+        "size": 18,
         "face": "verdana"
         },
         "size": null
@@ -239,12 +299,13 @@ def get_pyvis_graph(paper_id):
     "physics": {
         "forceAtlas2Based": {
         "springLength": 100,
-        "avoidOverlap": 0.4
+        "avoidOverlap": 0.14
         },
         "minVelocity": 0.75,
         "solver": "forceAtlas2Based"
     }
     }""")
+    
     # Get the full path of the current script
     html = nt.generate_html('coauthor.html')
     soup = BeautifulSoup(html, 'html.parser')
@@ -274,6 +335,7 @@ def get_pyvis_graph(paper_id):
     modified_html_string = str(soup)
     with open(f'{path}/{paper_id}.html','w') as f:
         f.write(modified_html_string)
+
     return data
 
 
@@ -404,15 +466,15 @@ def get_coauthor_graph(data,prof_data,prof_id,pyvis=False):
     return fig,bar_fig
 
 
-
+def get_conf_id(i):
+    if isinstance(i,list):
+        if len(i)<=1:
+            return None
+        return i[1].split('/')[0]
+    return None
+    
 def get_treemap(data,conf_data):
     tqdm.pandas()
-    def get_conf_id(i):
-        if isinstance(i,list):
-            if len(i)<=1:
-                return None
-            return i[1].split('/')[0]
-        return None
     data['conf_id'] = None
     data.loc[data[data['type'].isin(['conference_paper'])].index,'conf_id']=data[data['type'].isin(['conference_paper'])]['crossref'].str.split("conf/").progress_apply(get_conf_id)
     # temp = temp[temp['type'].isin(['conference_paper'])].copy()
@@ -424,7 +486,7 @@ def get_treemap(data,conf_data):
     treemap_df['type'] = treemap_df['type'].str.replace("_"," ").str.title()
     treemap_df['Type_Rank'] = treemap_df['type'] + '_' + treemap_df['Rank']
     treemap_df.sort_values('Type_Rank',ascending=True,inplace=True)
-    fig = px.treemap(treemap_df.fillna(' '), path=[px.Constant("Research Paper Distribution"),'type', 'Rank', 'Acronym'], values='count',labels='count',maxdepth=3,hover_data=['Title'],color='Type_Rank', color_discrete_sequence=px.colors.qualitative.Set3)
+    fig = px.treemap(treemap_df.fillna(' '), path=[px.Constant("Research Paper Distribution"),'type', 'Rank', 'Acronym'], values='count',labels='count',maxdepth=3,hover_data=['Title'],color='Type_Rank',color_discrete_sequence=px.colors.sequential.Blues[::-1])
 
     # Customize the layout (optional)
     fig.update_layout(
@@ -456,6 +518,7 @@ def get_granalur_topics_graph(scholar_data,scholar_id,year):
     chart_df.index.name = 0
     chart_df['before'] = num_citations_before
     chart_df['after'] = num_citations_after
+    
     chart_df.sort_values('before',ascending=False,inplace=True)
     chart_df.fillna(0,inplace=True)
 
@@ -465,13 +528,17 @@ def get_granalur_topics_graph(scholar_data,scholar_id,year):
         r=chart_df.after.to_list(),
         theta=categories,
         fill='toself',
-        name=f'{year} and After'
+        name=f'{year} and After',
+        line=dict(color='#e63946'),  # Set the line color
+        marker=dict(color='#e63946'),  # Set the marker (area) color
     ))
     fig.add_trace(go.Scatterpolar(
         r=chart_df.before.to_list(),
         theta=categories,
         fill='toself',
-        name=f'Before {year}'
+        name=f'Before {year}',
+        line=dict(color='#457b9d'),  # Set the line color
+        marker=dict(color='#457b9d'),  # Set the marker (area) color
     ))
 
     fig.update_layout(
@@ -489,4 +556,83 @@ def get_granalur_topics_graph(scholar_data,scholar_id,year):
     margin=dict(l=100, r=100, b=20, t=80),
     )
 
+    return fig
+
+def get_generalized_topics(data,conf,conf_topics):
+    tqdm.pandas()
+    data['conf_id'] = None
+    data.loc[data[data['type'].isin(['conference_paper'])].index,'conf_id']=data[data['type'].isin(['conference_paper'])]['crossref'].str.split("conf/").progress_apply(get_conf_id)
+    merge_df = data.merge(conf.dropna(subset='DBLP'),left_on='conf_id',right_on='DBLP',how='left')
+    conf_topics_dict = pd.Series(index=conf_topics['Area']).to_dict()
+    conf_topics_dict.update(merge_df.merge(conf_topics[['Acronym','Area']],left_on='Acronym',right_on='Acronym',how='left').groupby(['Area']).count()[['@key']].rename(columns={'@key':'count'})['count'].to_dict())
+    topics = pd.Series(conf_topics_dict).sort_values(ascending=False).dropna().index.to_list()
+    values = pd.Series(conf_topics_dict).sort_values(ascending=False).dropna().to_list()
+    
+    fig = go.Figure(data=go.Scatterpolar(
+    r=values,
+    theta=topics,
+    fill='toself'
+    ))
+
+    fig.update_layout(
+    polar=dict(
+        radialaxis=dict(
+        visible=True
+        ),
+    ),
+    height=400,
+    width=300,
+    showlegend=False,
+    margin=dict(l=150, r=150, b=20, t=80),
+    )
+    return fig
+    
+def get_generalized_topics_multiple(datas,conf,conf_topics,profs):
+    tqdm.pandas()
+    fig = go.Figure()
+    categories = None
+    for index,data in enumerate(datas):
+        if data is None:
+            continue
+        data = pd.json_normalize(data,max_level=0)
+        print(data.columns)
+        data['conf_id'] = None
+        data.loc[data[data['type'].isin(['conference_paper'])].index,'conf_id']=data[data['type'].isin(['conference_paper'])]['crossref'].str.split("conf/").progress_apply(get_conf_id)
+        merge_df = data.merge(conf.dropna(subset='DBLP'),left_on='conf_id',right_on='DBLP',how='left')
+        conf_topics_dict = pd.Series(index=conf_topics['Area'].unique()).to_dict()
+        conf_topics_dict.update(merge_df.merge(conf_topics[['Acronym','Area']],left_on='Acronym',right_on='Acronym',how='left').groupby(['Area']).count()[['@key']].rename(columns={'@key':'count'})['count'].to_dict())
+        topics = pd.Series(conf_topics_dict).dropna().index.to_list()
+        values = pd.Series(conf_topics_dict).dropna()
+        values = (values / values.sum())*100
+        fig.add_trace(go.Barpolar(
+            r=values,
+            theta=topics,
+            # fill='toself',
+            name=profs[index]['Full Name'],
+            # hover template to diaply name
+            hovertemplate = f"<b>{profs[index]['Full Name']}</b><br>" +
+                            "Topic: %{theta}<br>" +
+                            "Paper : %{r:.2f}%<br>" +
+                            "<extra></extra>",
+        ))
+
+    fig.update_layout(
+    polar=dict(
+        radialaxis=dict(
+        visible=True
+        ),
+    ),
+    height=400,
+    width=300,
+    showlegend=True,
+    margin=dict(l=100, r=100, b=40, t=100),
+    )
+    fig.update_layout(
+        title='Paper Percenatge Distribution Across Research Areas',
+        font_size=12,
+        legend_font_size=14,
+        polar_radialaxis_ticksuffix='%',
+        polar_angularaxis_rotation=90,
+
+    )
     return fig

@@ -16,5 +16,6 @@ settings = {
     "SCHOLAR_PUBS": str(ROOT_DIR.joinpath("data/scholar_publications.json")),
     "GRAPH_PATH": str(ROOT_DIR.joinpath("data/graphs")),
     "CONF_PATH": str(ROOT_DIR.joinpath("data/conf_processed.csv")),
+    "CONF_TOPIC_PATH": str(ROOT_DIR.joinpath("data/conference_topic.csv")),
 
 }

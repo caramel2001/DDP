@@ -9,7 +9,7 @@ import ast
 import streamlit_antd_components as sac
 import streamlit.components.v1 as components
 import plotly.express as px
-from search.graph import get_coauthor_graph,get_treemap,get_granalur_topics_graph
+from search.graph import get_coauthor_graph,get_treemap,get_granalur_topics_graph,get_generalized_topics
 
 # Layout of the page
 st.set_page_config(page_title="Professor Profile", layout="wide")
@@ -17,10 +17,13 @@ prof_data = read_prof_data(settings['PROF_DATA'])
 pubs_data,coauthors_data = read_google_shcolar_pubs(settings['SCHOLAR_DATA'])
 
 conf_data= pd.read_csv(settings['CONF_PATH'],index_col=[0])
-
+conf_topic =  pd.read_csv(settings['CONF_TOPIC_PATH'],index_col=[0])
 # print(pubs_data[0])
 print(st.session_state)
-profid = int(st.session_state.get('profId',0))
+if 'profId' in st.session_state and st.session_state.get('profId') is not None:
+    profid = int(st.session_state.get('profId'))
+else:
+    profid = 10
 print(profid)
 prof = prof_data.iloc[profid]
 print(prof)
@@ -132,29 +135,43 @@ with col2:
     st.subheader("Top Co-Authors")
 
 st.divider()
+
+dblp_data= read_pubs_data_by_prof(settings['PAPER_DATA'],profid)
+if dblp_data is not None:
+    dblp_data = pd.json_normalize(dblp_data,max_level=0)
+
 col1,col2 = st.columns([1,1])
 with col1:
     st.subheader("Generalized Research Focus")
-
+    if dblp_data is None:
+        st.warning("No DBLP Data Found")
+    else:
+        st.markdown("<br>",unsafe_allow_html=True)
+        st.write("These are topics extrcated from Conferences and graph represents the number of publications in each topic")
+        st.markdown("<br>",unsafe_allow_html=True)
+        fig = get_generalized_topics(dblp_data,conf_data,conf_topic)
+        st.plotly_chart(fig,use_container_width=True)
 with col2:
     st.subheader("Fine-Grained Research Focus")
     if pd.isna(prof['scholar_id']):
         st.warning("No Google Scholar Data Found")
     else:
         st.markdown("<br>",unsafe_allow_html=True)
-        st.write("These topics are classfied on CSO Ontology Dataset on Title + Abstract of the publications")
+        st.write("These topics are classfied on 14k CSO Ontology Dataset on Title + Abstract of the publications using Semantic and Synactic Similarity")
         st.markdown("<br>",unsafe_allow_html=True)
-        year = st.slider("Select Before Year",min_value=2015,max_value=2023,value=2020)
+        year = st.slider("Select Publications Before Year",min_value=2015,max_value=2023,value=2020)
         st.markdown("<br>",unsafe_allow_html=True)
         scholar_data = pd.read_json(settings['SCHOLAR_PUBS'])
         fig = get_granalur_topics_graph(scholar_data,prof['scholar_id'],year = year)
         st.plotly_chart(fig,use_container_width=True)
-        st.markdown("<p style='text-align: center;'>Number of Publications top 10 topics</p>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align: center;'>Number of Publications for top 10 fine-grained topics</p>", unsafe_allow_html=True)
 
 st.divider()
 
-dblp_data= read_pubs_data_by_prof(settings['PAPER_DATA'],profid)
-dblp_data = pd.json_normalize(dblp_data,max_level=0)
+
 st.subheader("Publications Distribution")
-fig = get_treemap(dblp_data,conf_data)
-st.plotly_chart(fig,use_container_width=True)
+if dblp_data is None:
+    st.warning("No DBLP Data Found")
+else:
+    fig = get_treemap(dblp_data,conf_data)
+    st.plotly_chart(fig,use_container_width=True)
