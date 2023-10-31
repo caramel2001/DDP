@@ -49,6 +49,22 @@ def read_pubs_data_by_prof(path,profid):
         return data
     return transform_data(data)
 
+@st.cache_data
+def read_pubs_data_by_profs(path,profids):
+    pubs= []
+    data = pd.read_json(path)
+    data = data.iloc[profids]
+    for i in data['publication_json'].to_list():
+        # print(type(i))
+        if isinstance(i,list):
+            pubs.extend(i)
+            continue
+        if pd.isna(i):
+            continue
+        pubs.extend(i)
+    return transform_data(pubs)
+
+
 def extract_titles(data):
     titles=[]
     for i in data:

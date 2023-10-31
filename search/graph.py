@@ -606,6 +606,37 @@ def get_granalur_topics_graph(scholar_data,scholar_id,year,citation_count = Fals
 
     return fig
 
+def get_granalur_topics_graph_data(scholar_data,scholar_id,year,citation_count = False):
+    scholar_data['author_id'] = scholar_data.author_pub_id.str.split(":").apply(lambda x: x[0])
+    prof_pubs = scholar_data[scholar_data['author_id']==scholar_id]
+    if citation_count:
+        temp = pd.json_normalize(prof_pubs[['semantic_topics','pub_year','num_citations']].to_dict('records'),meta=['num_citations','pub_year'],record_path='semantic_topics').groupby([0,'pub_year']).mean().sort_values('num_citations',ascending=False)
+    else:
+        temp = pd.json_normalize(prof_pubs[['semantic_topics','pub_year','num_citations']].to_dict('records'),meta=['num_citations','pub_year'],record_path='semantic_topics').groupby([0,'pub_year']).count().sort_values('num_citations',ascending=False)
+    temp_after = temp[temp.index.get_level_values(1)>=year].groupby([0]).sum().sort_values('num_citations',ascending=False).head(10)
+    # print(temp_after)
+    temp_before = temp[temp.index.get_level_values(1)<year].groupby([0]).sum().sort_values('num_citations',ascending=False)
+    # print(temp_before)
+    temp_before = temp_before.loc[set(temp_after.index).intersection(set(temp_before.index))]
+    temp_before.index = temp_before.index.str.title()
+    temp_after.index = temp_after.index.str.title()
+    num_citations_after = temp_after.num_citations
+    num_citations_before = temp_before.num_citations
+    topics_after = temp_after.index
+    topics_before = temp_before.index
+    #set index name to 0
+    chart_df = pd.DataFrame(index=topics_after)
+    chart_df.index.name = 0
+    chart_df['before'] = num_citations_before
+    chart_df['before'] = chart_df['before']/chart_df['before'].sum()
+    chart_df['after'] = num_citations_after
+    chart_df['after'] = chart_df['after']/chart_df['after'].sum()
+    chart_df.sort_values('after',ascending=False,inplace=True)
+    chart_df.fillna(0,inplace=True)
+
+    
+    return chart_df
+
 def get_generalized_topics(data,conf,conf_topics):
     tqdm.pandas()
     data['conf_id'] = None

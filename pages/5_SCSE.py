@@ -1,7 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as components
 import pandas as pd
-from utils import read_prof_data,read_google_shcolar_pubs,read_pubs_data
+from utils import read_prof_data,read_google_shcolar_pubs,read_pubs_data,read_pubs_data_by_profs
 from config.config import settings
 import streamlit_antd_components as sac
 from search.graph import get_pyvis_graph,get_graph,search_paper,get_color_map,get_generalized_topics_data,get_treemap_data
@@ -10,11 +10,32 @@ from streamlit_extras.tags import tagger_component
 import ast
 import plotly.graph_objects as go
 
+# Extracted using community detection algorithm and ChatGPT to identiy the labels of the communities
+RESEARCH_GROUPS = {
+    'Hardware' :[2,4,29,70,15,50,39,62,51],
+    'Cypersecurity' : [82,35,71,37,40,45,28,73],
+    'AI and Machine Learning' : [17,60,5,48,82,19,49,53,26,77,58,56,85,79,75,62,63],
+    'Data Analytics and Mining': [43,12,64,76,63,47,22],
+    'ComputerVision': [32,41,36,9,44,80,42,11,13,38,33,7,6,14,52,25,10],
+    'Human Computer Interaction': [57,18,59,54,1,84,20],
+    'Networks': [46,83,34,78,16,65,0,68,30,31],
+    'Distributed Computing': [21,66,14,3,77],
+    'Bioinformatics': [27,69,23],
+}
 st.set_page_config(page_title="SCSE", layout="wide")
+research_group = st.sidebar.multiselect("Select Research Groups",list(RESEARCH_GROUPS.keys()),default=None)
 st.title("SCSE")
-
+prof_data = read_prof_data(settings['PROF_DATA'])
 scholar_data = pd.read_json(settings['SCHOLAR_PUBS'])
-
+print(scholar_data.head())
+if research_group:
+    ids = []
+    for i in research_group:
+        ids.extend(RESEARCH_GROUPS[i])
+    # print(prof_data.index)
+    scholar_data['author_id'] = scholar_data.author_pub_id.str.split(":").apply(lambda x: x[0])
+    scholar_ids= prof_data.iloc[ids]['scholar_id'].to_list()
+    scholar_data = scholar_data[scholar_data['author_id'].isin(scholar_ids)]
 citation_last_year = scholar_data['cites_per_year'].apply(lambda x : x.get('2022',0) if not pd.isna(x) else 0).sum()
 total_citations = scholar_data['cites_per_year'].apply(lambda x : sum(list(x.values())) if not pd.isna(x) else 0).sum()
 
@@ -22,9 +43,9 @@ citation_ytd = scholar_data['cites_per_year'].apply(lambda x : x.get('2023',0) i
 
 num_publications =  scholar_data[scholar_data['pub_year']==2023].shape[0]
 num_publications_last =  scholar_data[scholar_data['pub_year']==2022].shape[0]
-pubs_percent = (num_publications-num_publications_last)/num_publications_last
+pubs_percent = (num_publications-num_publications_last)*100/num_publications_last
 
-percent = (citation_ytd-citation_last_year)/citation_last_year
+percent = (citation_ytd-citation_last_year)*100/citation_last_year
 # scholar_data['num_citations'].apply(lambda x : as)
 # citation_ytd = scholar_data[scholar_data['pub_year']==2023]['num_citations'].sum()
 col1, col2, col3,col4 = st.columns(4)
@@ -76,7 +97,11 @@ st.subheader('Conferences')
 
 #     st.plotly_chart(fig, use_container_width=True)
 # Create a stacked bar chart
-dblp_data = read_pubs_data(settings['PAPER_DATA'])
+if research_group:
+    dblp_data =read_pubs_data_by_profs(settings['PAPER_DATA'],ids)
+else:
+    dblp_data = read_pubs_data(settings['PAPER_DATA'])
+
 dblp_data = pd.json_normalize(dblp_data,max_level=0)
 dblp_data.drop_duplicates(subset=['@key'],inplace=True)
 # print(dblp_data.shape)
