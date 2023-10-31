@@ -1,10 +1,10 @@
-## Paper Grpah
+https://github.com/caramel2001/DDP
 
-- https://github.com/caramel2001/DDP
-
-- To Run the App
+To Run the App
 
 `streamlit run app.py`
+
+## Paper Grpah
 
 - Paper Topic Classification based on Computer Science Ontology (CSO) available <a href ="https://cso.kmi.open.ac.uk/download/version-3.3/cso_v3.3.csv">here</a>
 

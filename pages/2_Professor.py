@@ -160,11 +160,12 @@ with col2:
         st.write("These topics are classfied on 14k CSO Ontology Dataset on Title + Abstract of the publications using Semantic and Synactic Similarity")
         st.markdown("<br>",unsafe_allow_html=True)
         year = st.slider("Select Publications Before Year",min_value=2015,max_value=2023,value=2020)
+        citation_count = st.toggle("By Citation Count",value=False)
         st.markdown("<br>",unsafe_allow_html=True)
         scholar_data = pd.read_json(settings['SCHOLAR_PUBS'])
-        fig = get_granalur_topics_graph(scholar_data,prof['scholar_id'],year = year)
+        fig = get_granalur_topics_graph(scholar_data,prof['scholar_id'],year = year,citation_count=citation_count)
         st.plotly_chart(fig,use_container_width=True)
-        st.markdown("<p style='text-align: center;'>Number of Publications for top 10 fine-grained topics</p>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align: center;'>Top 10 fine-grained topics</p>", unsafe_allow_html=True)
 
 st.divider()
 
@@ -175,3 +176,4 @@ if dblp_data is None:
 else:
     fig = get_treemap(dblp_data,conf_data)
     st.plotly_chart(fig,use_container_width=True)
+

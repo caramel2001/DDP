@@ -500,12 +500,59 @@ def get_treemap(data,conf_data):
     fig.update_traces(marker=dict(cornerradius=3))
     return fig
 
-def get_granalur_topics_graph(scholar_data,scholar_id,year):
+def get_treemap(data,conf_data):
+    tqdm.pandas()
+    data['conf_id'] = None
+    data.loc[data[data['type'].isin(['conference_paper'])].index,'conf_id']=data[data['type'].isin(['conference_paper'])]['crossref'].str.split("conf/").progress_apply(get_conf_id)
+    # temp = temp[temp['type'].isin(['conference_paper'])].copy()
+    merge_df = data.merge(conf_data.dropna(subset='DBLP'),left_on='conf_id',right_on='DBLP',how='left')
+    treemap_df = merge_df.groupby(['type','Rank','DBLP','Acronym','Title'],dropna=False).count().reset_index()[['type','Rank','Acronym','Title','@key']].sort_values(['type','@key'],ascending=False).rename(columns={'@key':'count'})
+    # Create a DataFrame from the data
+    # Create a treemap using Plotly Express
+    treemap_df['Rank'].fillna("Unranked",inplace=True)
+    treemap_df['type'] = treemap_df['type'].str.replace("_"," ").str.title()
+    treemap_df['Type_Rank'] = treemap_df['type'] + '_' + treemap_df['Rank']
+    treemap_df.sort_values('Type_Rank',ascending=True,inplace=True)
+    fig = px.treemap(treemap_df.fillna(' '), path=[px.Constant("Research Paper Distribution"),'type', 'Rank', 'Acronym'], values='count',labels='count',maxdepth=3,hover_data=['Title'],color='Type_Rank',color_discrete_sequence=px.colors.sequential.Blues[::-1])
+
+    # Customize the layout (optional)
+    fig.update_layout(
+        # title='Treemap of Type, Rank, and Acronym',
+        margin=dict(l=0, r=0, b=0, t=20),
+        width=800,
+        height=600,
+    )
+    fig.update_traces(root_color="lightgrey")
+    # fig.update_layout(margin = dict(t=50, l=25, r=25, b=25))
+    fig.update_traces(marker=dict(cornerradius=3))
+    return fig
+
+def get_treemap_data(data,conf_data):
+    tqdm.pandas()
+    data['conf_id'] = None
+    data.loc[data[data['type'].isin(['conference_paper'])].index,'conf_id']=data[data['type'].isin(['conference_paper'])]['crossref'].str.split("conf/").progress_apply(get_conf_id)
+    # temp = temp[temp['type'].isin(['conference_paper'])].copy()
+    merge_df = data.merge(conf_data.dropna(subset='DBLP'),left_on='conf_id',right_on='DBLP',how='left')
+    treemap_df = merge_df.groupby(['type','Rank','DBLP','Acronym','Title'],dropna=False).count().reset_index()[['type','Rank','Acronym','Title','@key']].sort_values(['type','@key'],ascending=False).rename(columns={'@key':'count'})
+    # Create a DataFrame from the data
+    # Create a treemap using Plotly Express
+    treemap_df['Rank'].fillna("Unranked",inplace=True)
+    treemap_df['type'] = treemap_df['type'].str.replace("_"," ").str.title()
+    treemap_df['Type_Rank'] = treemap_df['type'] + '_' + treemap_df['Rank']
+    treemap_df.sort_values('Type_Rank',ascending=True,inplace=True)
+    return treemap_df
+
+def get_granalur_topics_graph(scholar_data,scholar_id,year,citation_count = False):
     scholar_data['author_id'] = scholar_data.author_pub_id.str.split(":").apply(lambda x: x[0])
     prof_pubs = scholar_data[scholar_data['author_id']==scholar_id]
-    temp = pd.json_normalize(prof_pubs[['semantic_topics','pub_year','num_citations']].to_dict('records'),meta=['num_citations','pub_year'],record_path='semantic_topics').groupby([0,'pub_year']).count().sort_values('num_citations',ascending=False)
+    if citation_count:
+        temp = pd.json_normalize(prof_pubs[['semantic_topics','pub_year','num_citations']].to_dict('records'),meta=['num_citations','pub_year'],record_path='semantic_topics').groupby([0,'pub_year']).mean().sort_values('num_citations',ascending=False)
+    else:
+        temp = pd.json_normalize(prof_pubs[['semantic_topics','pub_year','num_citations']].to_dict('records'),meta=['num_citations','pub_year'],record_path='semantic_topics').groupby([0,'pub_year']).count().sort_values('num_citations',ascending=False)
     temp_after = temp[temp.index.get_level_values(1)>=year].groupby([0]).sum().sort_values('num_citations',ascending=False).head(10)
+    print(temp_after)
     temp_before = temp[temp.index.get_level_values(1)<year].groupby([0]).sum().sort_values('num_citations',ascending=False)
+    print(temp_before)
     temp_before = temp_before.loc[set(temp_after.index).intersection(set(temp_before.index))]
     temp_before.index = temp_before.index.str.title()
     temp_after.index = temp_after.index.str.title()
@@ -517,8 +564,9 @@ def get_granalur_topics_graph(scholar_data,scholar_id,year):
     chart_df = pd.DataFrame(index=topics_after)
     chart_df.index.name = 0
     chart_df['before'] = num_citations_before
+    chart_df['before'] = chart_df['before']/chart_df['before'].sum()
     chart_df['after'] = num_citations_after
-    
+    chart_df['after'] = chart_df['after']/chart_df['after'].sum()
     chart_df.sort_values('before',ascending=False,inplace=True)
     chart_df.fillna(0,inplace=True)
 
@@ -569,9 +617,9 @@ def get_generalized_topics(data,conf,conf_topics):
     values = pd.Series(conf_topics_dict).sort_values(ascending=False).dropna().to_list()
     
     fig = go.Figure(data=go.Scatterpolar(
-    r=values,
-    theta=topics,
-    fill='toself'
+        r=values,
+        theta=topics,
+        fill='toself'
     ))
 
     fig.update_layout(
@@ -586,6 +634,18 @@ def get_generalized_topics(data,conf,conf_topics):
     margin=dict(l=150, r=150, b=20, t=80),
     )
     return fig
+
+def get_generalized_topics_data(data,conf,conf_topics):
+    tqdm.pandas()
+    data['conf_id'] = None
+    data.loc[data[data['type'].isin(['conference_paper'])].index,'conf_id']=data[data['type'].isin(['conference_paper'])]['crossref'].str.split("conf/").progress_apply(get_conf_id)
+    merge_df = data.merge(conf.dropna(subset='DBLP'),left_on='conf_id',right_on='DBLP',how='left')
+    conf_topics_dict = pd.Series(index=conf_topics['Area']).to_dict()
+    conf_topics_dict.update(merge_df.merge(conf_topics[['Acronym','Area']],left_on='Acronym',right_on='Acronym',how='left').groupby(['Area']).count()[['@key']].rename(columns={'@key':'count'})['count'].to_dict())
+    topics = pd.Series(conf_topics_dict).sort_values(ascending=False).dropna().index.to_list()
+    values = pd.Series(conf_topics_dict).sort_values(ascending=False).dropna().to_list()
+    
+    return topics,values
     
 def get_generalized_topics_multiple(datas,conf,conf_topics,profs):
     tqdm.pandas()

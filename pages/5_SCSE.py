@@ -1,13 +1,14 @@
 import streamlit as st
 import streamlit.components.v1 as components
 import pandas as pd
-from utils import read_prof_data,read_google_shcolar_pubs
+from utils import read_prof_data,read_google_shcolar_pubs,read_pubs_data
 from config.config import settings
 import streamlit_antd_components as sac
-from search.graph import get_pyvis_graph,get_graph,search_paper,get_color_map
+from search.graph import get_pyvis_graph,get_graph,search_paper,get_color_map,get_generalized_topics_data,get_treemap_data
 import plotly.express as px
 from streamlit_extras.tags import tagger_component 
 import ast
+import plotly.graph_objects as go
 
 st.set_page_config(page_title="SCSE", layout="wide")
 st.title("SCSE")
@@ -51,3 +52,56 @@ fig.update_layout(
 
 st.plotly_chart(fig, use_container_width=True)
 st.subheader('Conferences')
+# col1,col2 = st.columns([3,1])
+# with col1:
+#     dblp_data = read_pubs_data(settings['PAPER_DATA'])
+#     dblp_data = pd.json_normalize(dblp_data,max_level=0)
+#     dblp_data.drop_duplicates(subset=['@key'],inplace=True)
+#     print(dblp_data.shape)
+#     conf_data= pd.read_csv(settings['CONF_PATH'],index_col=[0])
+#     conf_topic =  pd.read_csv(settings['CONF_TOPIC_PATH'],index_col=[0])
+#     df = get_generalized_topics_data(dblp_data,conf_data,conf_topic)
+#     df = pd.DataFrame(zip(df[0],df[1]),columns=['Research Area','Count'])
+#     print(df)
+#     fig = px.pie(df, values='Count', names='Research Area', color_discrete_sequence=px.colors.qualitative.Set2)
+#     fig.update_layout(
+#     legend=dict(
+#         # orientation="h",  # Set legend orientation to horizontal
+#         # yanchor="bottom",  # Anchor the legend to the bottom
+#         # y=-2,  # Adjust the Y position for fine-tuning
+#         xanchor="left",  # Anchor point for X position
+#         x=-0.5  # Adjust the X position for fine-tuning
+#     )
+# )
+
+#     st.plotly_chart(fig, use_container_width=True)
+# Create a stacked bar chart
+dblp_data = read_pubs_data(settings['PAPER_DATA'])
+dblp_data = pd.json_normalize(dblp_data,max_level=0)
+dblp_data.drop_duplicates(subset=['@key'],inplace=True)
+print(dblp_data.shape)
+conf_data= pd.read_csv(settings['CONF_PATH'],index_col=[0])
+conf_topic =  pd.read_csv(settings['CONF_TOPIC_PATH'],index_col=[0])
+df = get_generalized_topics_data(dblp_data,conf_data,conf_topic)
+df = pd.DataFrame(zip(df[0],df[1]),columns=['Research Area','Count'])
+fig = px.bar(df, y='Research Area', x='Count',barmode='stack', title='Distribution of Papers Across Resaerch Areas')
+fig.update_layout(
+    xaxis_title='Research Area',
+    yaxis_title='Publication Count',
+    plot_bgcolor='rgba(0,0,0,0)',  # Make the background transparent
+    xaxis_tickangle=90,  # Rotate x-axis labels
+    xaxis_tickfont=dict(size=12),  # Set fontsize of x-ticks
+    yaxis_tickfont=dict(size=12))
+st.plotly_chart(fig, use_container_width=True)
+# Show the stacked bar chart
+col1,col2 = st.columns([1,1],gap='large')
+with col1:
+    treemap_df = get_treemap_data(dblp_data,conf_data)
+    treemap_df= treemap_df[treemap_df['type']=='Conference Paper']
+    treemap_df_grouped = treemap_df.groupby('Rank').sum()
+    print(treemap_df)
+    fig = px.pie(treemap_df_grouped, values='count', names=treemap_df_grouped.index, color_discrete_sequence=px.colors.qualitative.Set2,title='Conference Paper Rank Distribution')
+
+    st.plotly_chart(fig, use_container_width=True)
+with col2:
+    st.dataframe(treemap_df.groupby(['Rank','Acronym']).sum().reset_index().sort_values(by='count',ascending=False),use_container_width=True)
