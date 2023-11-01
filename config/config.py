@@ -17,5 +17,6 @@ settings = {
     "GRAPH_PATH": str(ROOT_DIR.joinpath("data/graphs")),
     "CONF_PATH": str(ROOT_DIR.joinpath("data/conf_processed.csv")),
     "CONF_TOPIC_PATH": str(ROOT_DIR.joinpath("data/conference_topic.csv")),
+    "COMMUNITY": str(ROOT_DIR.joinpath("data/communities.gpickle")),
 
 }

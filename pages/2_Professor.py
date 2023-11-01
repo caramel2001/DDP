@@ -26,7 +26,8 @@ else:
     profid = 10
 print(profid)
 prof = prof_data.iloc[profid]
-print(prof)
+print(prof['affiliations'])
+print(ast.literal_eval(prof['affiliations']))
 css_body_container = '''
     <style>
         [data-testid="stSidebar"] + section [data-testid="stVerticalBlock"]
@@ -44,7 +45,7 @@ with col1:
     st.image(picture_url,use_column_width=True) # Placeholder image; replace with actual profile image
 with col2:
     st.subheader(prof['Full Name'])
-    st.write(f"""{" , ".join(json.loads(prof.get('affiliations',"").replace("'",'"')))}""")
+    st.write(f"""{" , ".join(ast.literal_eval(prof['affiliations']))}""")
     st.write(f"Email : {prof['Email']}")
     research_keywords = prof.get('research_keywords',"[]") if not pd.isna(prof.get('research_keywords',"[]")) else "[]"
     tagger_component("Research Interests: ", json.loads(research_keywords.replace("'",'"')),color_name='lightblue')
@@ -169,7 +170,7 @@ with col2:
         st.markdown("<br>",unsafe_allow_html=True)
         st.write("These topics are classfied on 14k CSO Ontology Dataset on Title + Abstract of the publications using Semantic and Synactic Similarity")
         st.markdown("<br>",unsafe_allow_html=True)
-        year = st.slider("Select Publications Before Year",min_value=2015,max_value=2023,value=2020)
+        year = st.slider("Select Publications Before Year",min_value=2010,max_value=2023,value=2020)
         citation_count = st.toggle("By Citation Count",value=False)
         st.markdown("<br>",unsafe_allow_html=True)
         scholar_data = pd.read_json(settings['SCHOLAR_PUBS'])

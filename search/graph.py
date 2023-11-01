@@ -252,6 +252,11 @@ def get_pyvis_graph(paper_id):
             edges.append(i)
     G = nx.Graph()
     # print(nodes)
+    NODE_SIZE_FACTOR = 0.7
+    CIT_TO_SIZE_EXPONENT = 0.75
+    CIT_TO_SIZE_SCALAR = 20
+    LOG_OFFSET_FACTOR = 500
+    CONFERENCE_NODE_SIZE = 3
     for i in nodes:
         cit_count = i.get('citations_length', 0)
         node_size = (NODE_SIZE_FACTOR *(cit_count ** CIT_TO_SIZE_EXPONENT + CIT_TO_SIZE_SCALAR))/(np.log(cit_count + LOG_OFFSET_FACTOR)/np.log(LOG_OFFSET_FACTOR))
@@ -472,33 +477,6 @@ def get_conf_id(i):
             return None
         return i[1].split('/')[0]
     return None
-    
-def get_treemap(data,conf_data):
-    tqdm.pandas()
-    data['conf_id'] = None
-    data.loc[data[data['type'].isin(['conference_paper'])].index,'conf_id']=data[data['type'].isin(['conference_paper'])]['crossref'].str.split("conf/").progress_apply(get_conf_id)
-    # temp = temp[temp['type'].isin(['conference_paper'])].copy()
-    merge_df = data.merge(conf_data.dropna(subset='DBLP'),left_on='conf_id',right_on='DBLP',how='left')
-    treemap_df = merge_df.groupby(['type','Rank','DBLP','Acronym','Title'],dropna=False).count().reset_index()[['type','Rank','Acronym','Title','@key']].sort_values(['type','@key'],ascending=False).rename(columns={'@key':'count'})
-    # Create a DataFrame from the data
-    # Create a treemap using Plotly Express
-    treemap_df['Rank'].fillna("Unranked",inplace=True)
-    treemap_df['type'] = treemap_df['type'].str.replace("_"," ").str.title()
-    treemap_df['Type_Rank'] = treemap_df['type'] + '_' + treemap_df['Rank']
-    treemap_df.sort_values('Type_Rank',ascending=True,inplace=True)
-    fig = px.treemap(treemap_df.fillna(' '), path=[px.Constant("Research Paper Distribution"),'type', 'Rank', 'Acronym'], values='count',labels='count',maxdepth=3,hover_data=['Title'],color='Type_Rank',color_discrete_sequence=px.colors.sequential.Blues[::-1])
-
-    # Customize the layout (optional)
-    fig.update_layout(
-        # title='Treemap of Type, Rank, and Acronym',
-        margin=dict(l=0, r=0, b=0, t=20),
-        width=800,
-        height=600,
-    )
-    fig.update_traces(root_color="lightgrey")
-    # fig.update_layout(margin = dict(t=50, l=25, r=25, b=25))
-    fig.update_traces(marker=dict(cornerradius=3))
-    return fig
 
 def get_treemap(data,conf_data):
     tqdm.pandas()
@@ -553,21 +531,22 @@ def get_granalur_topics_graph(scholar_data,scholar_id,year,citation_count = Fals
     # print(temp_after)
     temp_before = temp[temp.index.get_level_values(1)<year].groupby([0]).sum().sort_values('num_citations',ascending=False)
     # print(temp_before)
-    temp_before = temp_before.loc[set(temp_after.index).intersection(set(temp_before.index))]
+    # temp_before = temp_before.loc[set(temp_after.index).intersection(set(temp_before.index))]
     temp_before.index = temp_before.index.str.title()
     temp_after.index = temp_after.index.str.title()
     num_citations_after = temp_after.num_citations
     num_citations_before = temp_before.num_citations
-    topics_after = temp_after.index
-    topics_before = temp_before.index
+    topics_after = temp_after.head(5).index.to_list()
+    topics_before = temp_before.head(5).index.to_list()
+    topics = list(set(topics_after).union(set(topics_before)))
     #set index name to 0
-    chart_df = pd.DataFrame(index=topics_after)
+    chart_df = pd.DataFrame(index=topics)
     chart_df.index.name = 0
     chart_df['before'] = num_citations_before
     chart_df['before'] = chart_df['before']/chart_df['before'].sum()
     chart_df['after'] = num_citations_after
     chart_df['after'] = chart_df['after']/chart_df['after'].sum()
-    chart_df.sort_values('before',ascending=False,inplace=True)
+    chart_df.sort_values('after',ascending=False,inplace=True)
     chart_df.fillna(0,inplace=True)
 
     fig = go.Figure()

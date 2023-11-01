@@ -4,9 +4,9 @@ import pandas as pd
 from utils import read_prof_data,read_google_shcolar_pubs,read_pubs_data,read_pubs_data_by_profs
 from config.config import settings
 import streamlit_antd_components as sac
-from search.graph import get_pyvis_graph,get_graph,search_paper,get_color_map,get_generalized_topics_data,get_treemap_data
+from search.graph import get_generalized_topics_data,get_treemap_data
+from search.community import get_community_graph
 import plotly.express as px
-from streamlit_extras.tags import tagger_component 
 import ast
 import plotly.graph_objects as go
 
@@ -130,3 +130,7 @@ with col1:
     st.plotly_chart(fig, use_container_width=True)
 with col2:
     st.dataframe(treemap_df.groupby(['Rank','Acronym']).sum().reset_index().sort_values(by='count',ascending=False),use_container_width=True)
+
+st.subheader('Community/Research Groups Detection')
+community  = get_community_graph()
+components.html(community, height = 800,width=None)
